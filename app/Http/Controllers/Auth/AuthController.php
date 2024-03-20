@@ -62,7 +62,7 @@ class AuthController extends Controller
 
             $data["token"] = $user->createToken("LaravelSanctumAuth")->plainTextToken;
             
-            $data['user'] = new UserShortResource($user->load('roles', 'permissions', 'profile'));
+            $data['user'] = new UserShortResource($user->load('roles'));
 
             return $this->handleResponse($data, trans('auth.login'));
 
