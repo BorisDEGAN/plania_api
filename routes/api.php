@@ -7,6 +7,7 @@ use App\Http\Controllers\UsersController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\AppConfigurationController;
+use App\Http\Controllers\ProjectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,5 +52,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     //Permissions Manage
     Route::post('roles/permissions/manage', [PermissionController::class, 'role_manage']);
 
-
+    //Projects
+    Route::post('projects/search', [ProjectController::class, 'search'])->name('projects.search');
+    Route::apiResource('projects', ProjectController::class);
 });
