@@ -21,8 +21,8 @@ class ProjectShowResource extends JsonResource
             'description' => $this->description,
             'user_id' => $this->user_id,
             'user' => new UserShowResource($this->user),
-            'created_at' => $this->created_at->format(config('panel.datetime_format')),
-            'updated_at' => $this->updated_at->format(config('panel.datetime_format')),
+            // 'created_at' => $this->created_at->format(config('panel.datetime_format')),
+            // 'updated_at' => $this->updated_at->format(config('panel.datetime_format')),
         ];
     }
 }

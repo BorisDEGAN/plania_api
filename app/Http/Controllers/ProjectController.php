@@ -29,7 +29,7 @@ class ProjectController extends Controller
         $status = $request->status;
         $per_page = $request->per_page ?? 10;
 
-        $posts = Project::with(['post_category', 'secteur'])->orderByDesc('created_at');
+        $posts = Project::with(['user'])->orderByDesc('created_at');
 
         if($title)
         {
@@ -69,7 +69,7 @@ class ProjectController extends Controller
 
     public function show(Project $post)
     {
-        abort_if(Gate::denies('post_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        // abort_if(Gate::denies('post_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return new ProjectShowResource($post->load(['user']));
     }
