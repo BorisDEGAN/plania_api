@@ -29,10 +29,28 @@ class Project extends Model
     protected $fillable = [
         'title',
         'description',
-        'alias',
+        'context',
+        'outcomes',
+        'steps',
+        'steps_planning',
+        'budget',
+        'budget_planning',
+        'budget_notes',
+        'activities',
+        'user_id',        
         'created_at',
         'updated_at',
         'deleted_at',
+    ];
+
+    protected $casts = [
+        'outcomes' => 'array',
+        'steps' => 'array',
+        'steps_planning' => 'array',
+        'budget' => 'array',
+        'budget_planning' => 'array',
+        'budget_notes' => 'array',
+        'activities' => 'array',
     ];
 
     protected $appends = [
