@@ -20,6 +20,7 @@ class ProjectListResource extends JsonResource
             'title' => $this->title,
             'description' => $this->description,
             'user_id' => $this->user_id,
+            'status' => $this->status,
             'user' => new UserListResource($this->user),
             'created_at' => $this->created_at->format(config('panel.datetime_format')),
             'updated_at' => $this->updated_at->format(config('panel.datetime_format')),

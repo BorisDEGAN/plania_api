@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Project extends Model
 {
-    use SoftDeletes, HasStatuses;
+    use SoftDeletes, HasStatuses, HasFactory;
 
     public const PENDING_STATE = "pending";
     public const STARTED_STATE = "accepted";
