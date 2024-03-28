@@ -29,69 +29,69 @@ class ProjectController extends Controller
         $status = $request->status;
         $per_page = $request->per_page ?? 10;
 
-        $posts = Project::with(['user'])->orderByDesc('created_at');
+        $projects = Project::with(['user'])->orderByDesc('created_at');
 
         if($title)
         {
-            $posts = $posts->where('title', 'ILIKE', '%'.$title.'%')
+            $projects = $projects->where('title', 'ILIKE', '%'.$title.'%')
                         ->orWhere('description', 'ILIKE', '%'.$title.'%')
                         ->orWhere('tags', 'ILIKE', '%'.$title.'%');
         }
         
         if($description)
         {
-            $posts = $posts->where('description', 'ILIKE', '%'.$description.'%');
+            $projects = $projects->where('description', 'ILIKE', '%'.$description.'%');
         }
 
         if($user_id)
         {   
-            $posts = $posts->where('user_id', $user_id);
+            $projects = $projects->where('user_id', $user_id);
         }
 
         if($status)
         {
-            $posts = $posts->currentStatus($status);
+            $projects = $projects->currentStatus($status);
         }
 
-        return ProjectListResource::collection($posts->paginate($per_page));
+        return ProjectListResource::collection($projects->paginate($per_page));
     }
 
     public function store(StoreProjectRequest $request)
     {
-        $post = Project::create($request->all());
+        $project = Project::create($request->all());
 
-        $post->setStatus($request->status ?? Project::PENDING_STATE);
+        $project->setStatus($request->status ?? Project::PENDING_STATE);
 
-        return (new ProjectShowResource($post))
+        return (new ProjectShowResource($project))
             ->response()
             ->setStatusCode(Response::HTTP_CREATED);
     }
 
-    public function show(Project $post)
+    public function show(Project $project)
     {
         // abort_if(Gate::denies('post_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return new ProjectShowResource($post->load(['user']));
+        return new ProjectShowResource($project->load(['user']));
     }
 
-    public function update(UpdateProjectRequest $request, Project $post)
+    public function update(UpdateProjectRequest $request, Project $project)
     {
-        $post->update($request->all());
+        $project->update($request->all());
 
         if ($request->status != null) {
-            $post->setStatus($request->status);
+            $project->setStatus($request->status);
         }
 
-        return (new ProjectShowResource($post->refresh()))
+        return (new ProjectShowResource($project->refresh()))
             ->response()
             ->setStatusCode(Response::HTTP_ACCEPTED);
     }
 
-    public function destroy(Project $post)
+    public function destroy(Project $project)
     {
         abort_if(Gate::denies('post_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $post->delete();
+        $project->delete();
 
         return response(null, Response::HTTP_NO_CONTENT);
     }
