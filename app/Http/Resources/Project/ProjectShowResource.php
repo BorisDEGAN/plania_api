@@ -21,8 +21,18 @@ class ProjectShowResource extends JsonResource
             'description' => $this->description,
             'user_id' => $this->user_id,
             'user' => new UserShowResource($this->user),
-            // 'created_at' => $this->created_at->format(config('panel.datetime_format')),
-            // 'updated_at' => $this->updated_at->format(config('panel.datetime_format')),
+            'status' => $this->status,
+            'context' => $this->context,
+            'outcomes' => $this->outcomes,
+            'steps' => $this->steps,
+            'steps_planning' => $this->steps_planning,
+            'budget' => $this->budget,
+            'budget_planning' => $this->budget_planning,
+            'budget_notes' => $this->budget_notes,
+            'activities' => $this->activities,
+            'partners' => $this->partners,
+            'created_at' => $this->created_at?->format(config('panel.datetime_format')),
+            'updated_at' => $this->updated_at?->format(config('panel.datetime_format')),
         ];
     }
 }
