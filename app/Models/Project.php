@@ -57,7 +57,7 @@ class Project extends Model
         'status'
     ];
 
-    public function getStatusAttribute($value)
+    public function getStatusAttribute()
     {
         return $this->status()?->name;
     }

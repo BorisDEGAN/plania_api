@@ -21,7 +21,16 @@ class ProjectFactory extends Factory
     {
         return [
             'title' => fake()->sentence(),
-            'description' => fake()->text(),
+            'description' => fake()->paragraph(50),
+            'context' => fake()->paragraph(5),
+            'outcomes' => fake()->paragraph(3),
+            'steps' => fake()->paragraph(3),
+            'steps_planning' => fake()->paragraph(3),
+            'budget' => fake()->paragraph(3),
+            'budget_planning' => fake()->paragraph(3),
+            'budget_notes' => fake()->paragraph(3),
+            'activities' => fake()->paragraph(3),
+            'partners' => json_encode(fake()->paragraph(3)),
             'user_id' => User::all()->random()->id,
         ];
     }
@@ -31,7 +40,7 @@ class ProjectFactory extends Factory
      * 
      * @return $this
      */
-    public function status(): static
+    public function configure(): static
     {
         return $this->afterCreating(function (Project $project) {
             $project->setStatus(Arr::random(Project::STATES));

@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
         if(env('APP_ENV') == "local")
         {
             $this->call([
+                ProjectSeeder::class,
             ]);
         }
     }
