@@ -20,7 +20,7 @@ trait HasStatuses
             ->latest('id');
     }
 
-    public function status(): ?Status
+    public function status()
     {
         return $this->latestStatus();
     }
@@ -44,7 +44,7 @@ trait HasStatuses
      *
      * @return null|Status
      */
-    public function latestStatus(...$names): ?Status
+    public function latestStatus(...$names)
     {
         $statuses = $this->relationLoaded('statuses') ? $this->statuses : $this->statuses();
 
