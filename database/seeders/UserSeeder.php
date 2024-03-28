@@ -30,7 +30,7 @@ class UserSeeder extends Seeder
             [
                 "firstname" => "John",
                 "lastname" => "Doe",
-                "email" => "admin@plannia.com",
+                "email" => "admin@plania.com",
                 'password' => Hash::make('password'),
                 'email_verified_at' => now(),
             ],
@@ -41,7 +41,7 @@ class UserSeeder extends Seeder
             [
                 "firstname" => "Jane",
                 "lastname" => "Doe",
-                "email" => "janedoe@plannia.com",
+                "email" => "janedoe@plania.com",
                 'password' => Hash::make('password'),
                 'email_verified_at' => now(),
             ],
