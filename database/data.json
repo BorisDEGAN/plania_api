@@ -1,0 +1,23 @@
+{
+    "titre" : "Amélioration de la qualité de l’éducation des enfants vivant avec handicap par le jeu et le sport",
+    "objectifs" : [
+        "amener au bout de trois ans, 1125 enfants et jeunes handicapés à bénéficier d’une éducation de qualité",
+        "accroître la sensibilisation des communautés sur l’importance de la promotion des enfants handicapés par le sport et le jeu"
+    ],
+    "resultat_attendus" : [
+        {
+            "titre" : "Meilleure performance scolaire des enfants handicapés des centres bénéficiaires",
+            "activités" : [
+                "Appuyer l’installation d’une unité de transcription des livres et documents pour les aveugles",
+                "Evaluer les besoins en formation des enseignants sur  le nouveau programme d’enseignement"
+            ]
+        },
+        {
+            "titre" : "L’environnement d’apprentissage des enfants handicapés visuels et auditifs plus attrayant et amélioré",
+            "activités" : [
+                "Former les encadreurs et enseignants sur le module de développement global de l’enfant de RTP",
+                "Former les enseignants au module de prévention du VIH SIDA de RTP"
+            ]
+        }
+    ]
+}

@@ -31,25 +31,22 @@ class Project extends Model
         'description',
         'context',
         'outcomes',
-        'steps',
-        'steps_planning',
+        'objectives',   
+        'outcomes',
         'budget',
-        'budget_planning',
-        'budget_notes',
+        'budget_plan',
         'activities',
+        'calendar',
         'user_id',        
-        'created_at',
-        'updated_at',
-        'deleted_at',
     ];
 
     protected $casts = [
         'outcomes' => 'array',
-        'steps' => 'array',
-        'steps_planning' => 'array',
+        'objectives' => 'array',
+        'outomes' => 'array',
         'budget' => 'array',
-        'budget_planning' => 'array',
-        'budget_notes' => 'array',
+        'budget_plan' => 'array',
+        'calendar   ' => 'array',
         'activities' => 'array',
     ];
 

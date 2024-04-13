@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\AppConfigurationController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\TestContoller;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,7 @@ use App\Http\Controllers\ProjectController;
 Route::post('register', [AuthController::class, 'register'])->name('register');
 Route::post('login', [AuthController::class, 'login'])->name('login');
 Route::delete('logout', [AuthController::class, 'logout'])->name('logout');
+Route::post('test', [TestContoller::class, 'test'])->name('test');
 
 // App Configurations
 Route::get('app-configurations', [AppConfigurationController::class, 'index'])->name('app-configurations.index');

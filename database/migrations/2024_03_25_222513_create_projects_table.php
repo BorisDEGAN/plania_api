@@ -16,13 +16,11 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->text('description')->nullable();
             $table->text('context')->nullable();
+            $table->json('objectives')->nullable();
             $table->json('outcomes')->nullable();
-            $table->json('steps')->nullable();
-            $table->json('steps_planning')->nullable();
-            $table->json('budget')->nullable();
-            $table->json('budget_planning')->nullable();
-            $table->json('budget_notes')->nullable();
             $table->json('activities')->nullable();
+            $table->json('budget_plan')->nullable();
+            $table->json('calendar')->nullable();
             $table->foreignId('user_id')->nullable()->constrained();
 
             $table->json('partners')->nullable();
