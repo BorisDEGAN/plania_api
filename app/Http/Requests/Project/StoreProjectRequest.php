@@ -29,7 +29,7 @@ class StoreProjectRequest extends FormRequest
             'context' => ['nullable', 'string'],
             'justification' => ['nullable', 'string'],
             'duration' => ['nullable', 'integer'],
-            'global_objective' => ['nullable', 'integer'],
+            'global_objective' => ['nullable', 'string'],
 
             'objectives' => ['required', 'array'],
             'objectives.*' => ['required', 'string'],
