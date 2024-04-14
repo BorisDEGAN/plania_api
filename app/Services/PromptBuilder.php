@@ -20,9 +20,11 @@ class PromptBuilder
         ];
     }
 
-    public function generateGrantDiagram()
+    public function generateGrantChart()
     {
-        $result = Gemini::geminiPro()->generateContent('en utilisant cette data, génere moi un diagramme de Grant des activites sachant qu\'on a une semaine; \n'.json_encode($this->project['resultat_attendus']));
+        $garant_data_structure = file_get_contents(base_path('app/Services/grant_data.json'));
+
+        $result = Gemini::geminiPro()->generateContent("Tu es un expert en production de diagramme de Grant, et tu es capable de generer un diagramme de Grant. avec la data suivante: \n".json_encode($this->project['resultat_attendus']).'\n en suivant la structure suivante:'.json_encode($garant_data_structure).'\n soit exhaustif et ne renvois que les donnes json');
         return $result->text();
         // return json_decode($result->text());
     }

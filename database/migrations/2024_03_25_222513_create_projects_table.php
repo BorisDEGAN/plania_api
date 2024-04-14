@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->text('description')->nullable();
             $table->text('context')->nullable();
+            $table->integer('duration')->nullable();
             $table->json('objectives')->nullable();
             $table->json('outcomes')->nullable();
             $table->json('activities')->nullable();

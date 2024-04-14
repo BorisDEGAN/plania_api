@@ -13,6 +13,6 @@ class TestContoller extends Controller
     {
         $data = new PromptBuilder();
 
-        return $data->generateGrantDiagram();
+        return $data->generateGrantChart();
     }
 }
