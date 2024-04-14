@@ -7,14 +7,17 @@ use Illuminate\Support\Facades\Http;
 
 class PromptBuilder
 {
-    public array $project;
+    public $project;
 
     public array $final_data;
 
     public function __construct()
     {
         $this->project = json_decode(file_get_contents(database_path('data.json')), true);
-        $this->final_data = [];
+        
+        $this->final_data = [
+            ...$this->project,
+        ];
     }
 
     public function generateGrantDiagram()
