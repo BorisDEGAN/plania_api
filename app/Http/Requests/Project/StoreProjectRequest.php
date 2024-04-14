@@ -83,7 +83,6 @@ class StoreProjectRequest extends FormRequest
             'performance_matrix' => ['nullable', 'array'],
             'performance_matrix.*' => ['required', 'array'],
             'performance_matrix.*.effect' => ['required', 'string'],
-            'performance_matrix.*.verification_source' => ['required', 'string'],
 
             'performance_matrix.*.verification_sources' => ['required', 'array'],
             'performance_matrix.*.verification_sources.*' => ['required', 'string'],
