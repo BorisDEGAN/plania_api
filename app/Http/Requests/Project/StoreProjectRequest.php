@@ -24,18 +24,94 @@ class StoreProjectRequest extends FormRequest
     public function rules(): array
     {
         return [
-            // 'title' => ['required', 'string', 'max:255'],
-            // 'description' => ['nullable', 'string'],
-            // 'context' => ['nullable', 'string'],
-            // 'outcomes' => ['nullable', 'array'],
-            // 'steps' => ['nullable', 'array'],
-            // 'steps_planning' => ['nullable', 'array'],
-            // 'budget' => ['nullable', 'array'],
-            // 'budget_planning' => ['nullable', 'array'],
-            // 'budget_notes' => ['nullable', 'array'],
-            // 'activities' => ['nullable', 'array'],
-            // 'user_id' => ['nullable', 'exists:users,id'],
-            // 'partners' => ['nullable', 'array'],
+            'title' => ['required', 'string', 'max:255'],
+            'description' => ['nullable', 'string'],
+            'context' => ['nullable', 'string'],
+            'justification' => ['nullable', 'string'],
+            'duration' => ['nullable', 'integer'],
+            'global_objective' => ['nullable', 'integer'],
+
+            'objectives' => ['required', 'array'],
+            'objectives.*' => ['required', 'string'],
+
+
+            'outcomes' => ['required', 'array'],
+            'outcomes.*' => ['required', 'array'],
+            'outcomes.*.title' => ['required', 'string'],
+            'outcomes.*.activities' => ['required', 'array'],
+            'outcomes.*.activities.*' => ['required', 'string'],
+
+            'activities' => ['required', 'array'],
+            'activities.*' => ['required', 'string'],
+
+
+            'logical_context' => ['required', 'array'],
+
+            'logical_context.budget' => ['required', 'numeric'],
+
+            'logical_context.objectives' => ['nullable', 'array'],
+            'logical_context.objectives.*' => ['nullable', 'string'],
+            
+            'logical_context.outcomes' => ['required', 'array'],
+            'logical_context.outcomes.*' => ['required', 'array'],
+            'logical_context.outcomes.*.title' => ['required', 'string'],
+
+            'logical_context.outcomes.*.activities' => ['required', 'array'],
+            'logical_context.outcomes.*.activities.*' => ['required', 'array'],
+
+            'logical_context.outcomes.*.activities.title' => ['required', 'string'],
+
+            'logical_context.outcomes.*.activities.intermediate_outcomes' => ['required', 'array'],
+            'logical_context.outcomes.*.activities.intermediate_outcomes.*' => ['required', 'string'],
+
+            'logical_context.outcomes.*.activities.efects' => ['required', 'array'],
+            'logical_context.outcomes.*.activities.efects.*' => ['required', 'string'],
+
+            'logical_context.outcomes.*.activities.impacts' => ['required', 'array'],
+            'logical_context.outcomes.*.activities.impacts.*' => ['required', 'string'],
+
+            'intervention_strategy' => ['nullable', 'string'],
+            
+            'partners' => ['required', 'array'],
+            'partners.*' => ['required', 'array'],
+            'partners.*.name' => ['required', 'string'],
+            'partners.*.abilities' => ['required', 'array'],
+            'partners.*.abilities.*' => ['required', 'string'],
+            
+            'quality_monitoring.*' => ['nullable', 'string'],
+            
+            'performance_matrix' => ['nullable', 'array'],
+            'performance_matrix.*' => ['required', 'array'],
+            'performance_matrix.*.effect' => ['required', 'string'],
+            'performance_matrix.*.verification_source' => ['required', 'string'],
+
+            'performance_matrix.*.verification_sources' => ['required', 'array'],
+            'performance_matrix.*.verification_sources.*' => ['required', 'string'],
+
+            'performance_matrix.*.collect_tools' => ['required', 'array'],
+            'performance_matrix.*.collect_tools.*' => ['required', 'string'],
+
+            'performance_matrix.*.frequency' => ['required', 'string'],
+            'performance_matrix.*.analyse' => ['required', 'string'],
+
+            'budget_plan' => ['nullable', 'array'],
+            'budget_plan.*' => ['required', 'array'],
+            'budget_plan.*.section' => ['required', 'string'],
+            'budget_plan.*.activities' => ['required', 'array'],
+            'budget_plan.*.activities.*' => ['required', 'array'],
+            'budget_plan.*.activities.*.title' => ['required', 'string'],
+            'budget_plan.*.activities.*.budget' => ['required', 'numeric'],
+
+            'budget_currency' => ['nullable', 'string'],
+
+            'calendar' => ['nullable', 'array'],
+            'calendar.*' => ['required', 'array'],
+            'calendar.*.outcome' => ['required', 'string'],
+            'calendar.*.activities' => ['required', 'array'],
+            'calendar.*.activities.*' => ['required', 'array'],
+            'calendar.*.activities.*.title' => ['required', 'string'],
+            'calendar.*.activities.*.start_date' => ['required', 'datetime'],
+            'calendar.*.activities.*.end_date' => ['required', 'datetime'],
         ];
     }
 
