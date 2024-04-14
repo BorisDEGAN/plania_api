@@ -1,23 +1,89 @@
 {
-    "titre" : "Amélioration de la qualité de l’éducation des enfants vivant avec handicap par le jeu et le sport",
-    "objectifs" : [
-        "amener au bout de trois ans, 1125 enfants et jeunes handicapés à bénéficier d’une éducation de qualité",
-        "accroître la sensibilisation des communautés sur l’importance de la promotion des enfants handicapés par le sport et le jeu"
-    ],
-    "resultat_attendus" : [
+    "title" : "Amélioration de la qualité de l’éducation des enfants vivant avec handicap par le jeu et le sport",
+    "description" : "test",
+    "context" : "test",
+    "objectives" : [
         {
-            "titre" : "Meilleure performance scolaire des enfants handicapés des centres bénéficiaires",
-            "activités" : [
-                "Appuyer l’installation d’une unité de transcription des livres et documents pour les aveugles",
-                "Evaluer les besoins en formation des enseignants sur  le nouveau programme d’enseignement"
-            ]
-        },
-        {
-            "titre" : "L’environnement d’apprentissage des enfants handicapés visuels et auditifs plus attrayant et amélioré",
-            "activités" : [
-                "Former les encadreurs et enseignants sur le module de développement global de l’enfant de RTP",
-                "Former les enseignants au module de prévention du VIH SIDA de RTP"
+            "title" : "test",
+            "outcomes" : [
+                {
+                    "title" : "test",
+                    "activities" : [
+                        "test",
+                        "test"
+                    ]
+                },
+                {
+                    "title" : "test",
+                    "activities" : [
+                        "test",
+                        "test"
+                    ]
+                }
             ]
         }
-    ]
+    ],
+    "outcomes" : [
+        "test",
+        "test"
+    ],
+    "activities" : [
+        "test",
+        "test"
+    ],
+    "budget" : 50000000,
+    "budget_plan" : {
+        "objectives" : [
+            {
+                "title" : "test",
+                "budget" : 10000,
+                "outcomes" : [
+                    {
+                        "title" : "test",
+                        "budget" : 10000,
+                        "activities" : [
+                            {
+                                "title" : "test",
+                                "budget" : 10000
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "test",
+                        "budget" : 10000,
+                        "activities" : [
+                            {
+                                "title" : "test",
+                                "budget" : 10000
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "calendar" : {
+        "outcomes" : [
+            {
+                "title" : "test",
+                "activities" : [
+                    {
+                        "title" : "test",
+                        "start_date" : "2022-01-01",
+                        "end_date" : "2022-01-01"
+                    },
+                    {
+                        "title" : "test",
+                        "start_date" : "2022-01-01",
+                        "end_date" : "2022-01-01"
+                    },
+                    {
+                        "title" : "test",
+                        "start_date" : "2022-01-01",
+                        "end_date" : "2022-01-01"
+                    }
+                ]
+            }
+        ]
+    }
 }

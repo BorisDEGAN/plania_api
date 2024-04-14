@@ -31,7 +31,6 @@ class Project extends Model
         'description',
         'context',
         'duration',
-        'outcomes',
         'objectives',   
         'outcomes',
         'budget',
