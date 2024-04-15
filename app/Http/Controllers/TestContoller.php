@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Services\PromptBuilder;
 use Gemini\Laravel\Facades\Gemini;
 use Illuminate\Support\Facades\Http;
+use App\Services\PromptBuilder\PromptBuilder;
 
 class TestContoller extends Controller
 {

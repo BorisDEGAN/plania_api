@@ -78,6 +78,7 @@ class StoreProjectRequest extends FormRequest
             'partners.*.abilities' => ['required', 'array'],
             'partners.*.abilities.*' => ['required', 'string'],
             
+            'quality_monitoring' => ['nullable', 'array'],
             'quality_monitoring.*' => ['nullable', 'string'],
             
             'performance_matrix' => ['nullable', 'array'],

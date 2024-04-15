@@ -11,6 +11,7 @@ use App\Http\Requests\Project\SearchProjectRequest;
 use App\Http\Requests\Project\UpdateProjectRequest;
 use App\Http\Resources\Project\ProjectListResource;
 use App\Http\Resources\Project\ProjectShowResource;
+use App\Services\PromptBuilder;
 
 class ProjectController extends Controller
 {
@@ -94,5 +95,17 @@ class ProjectController extends Controller
         $project->delete();
 
         return response(null, Response::HTTP_NO_CONTENT);
+    }
+
+    public function genereteWithChanges(Request $request, Project $project)
+    {
+        $duration = $request->duration;
+        $budget = $request->budget;
+        // $promp_builder = (new PromptBuilder($project));
+
+        // if($duration)
+        // {
+        //     $promp_builder;
+        // }
     }
 }

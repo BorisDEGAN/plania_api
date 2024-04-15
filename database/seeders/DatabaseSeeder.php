@@ -19,12 +19,12 @@ class DatabaseSeeder extends Seeder
             UserRoleSeeder::class,
             PermissionSeeder::class,
             PermissionRoleSeeder::class,
+            ProjectSeeder::class,
         ]);
 
         if(env('APP_ENV') == "local")
         {
             $this->call([
-                ProjectSeeder::class,
             ]);
         }
     }

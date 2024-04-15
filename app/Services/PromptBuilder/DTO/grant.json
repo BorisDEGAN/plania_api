@@ -1,0 +1,14 @@
+{
+    "outcomes" : [
+        {
+            "title" : "outcome title",
+            "activities" : [
+                {
+                    "title" : "activity title",
+                    "start_date" : "2022-01-01",
+                    "end_date" : "2022-01-01"
+                }
+            ]
+        }
+    ]
+}

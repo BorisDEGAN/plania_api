@@ -1,0 +1,13 @@
+{
+    "budget_plan": [
+        {
+          "section": "string",
+          "activities": [
+            {
+              "title": "string",
+              "budget": 0
+            }
+          ]
+        }
+    ]
+}
