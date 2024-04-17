@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\AppConfigurationController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\StatistiquesController;
 use App\Http\Controllers\TestContoller;
 
 /*
@@ -53,6 +54,9 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 
     //Permissions Manage
     Route::post('roles/permissions/manage', [PermissionController::class, 'role_manage']);
+
+    //Statistiques
+    Route::get('stats/projects-stats', [StatistiquesController::class, 'projects_stats']);
 
     //Projects
     Route::post('projects/search', [ProjectController::class, 'search'])->name('projects.search');
