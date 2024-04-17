@@ -61,16 +61,21 @@ class StoreProjectRequest extends FormRequest
 
             'logical_context.outcomes.*.activities.title' => ['required', 'string'],
 
-            'logical_context.outcomes.*.activities.intermediate_outcomes' => ['required', 'array'],
-            'logical_context.outcomes.*.activities.intermediate_outcomes.*' => ['required', 'string'],
-
+            
             'logical_context.outcomes.*.activities.efects' => ['required', 'array'],
             'logical_context.outcomes.*.activities.efects.*' => ['required', 'string'],
+
+            'logical_context.outcomes.*.activities.immediate_outcomes' => ['required', 'array'],
+            'logical_context.outcomes.*.activities.immediate_outcomes.*' => ['required', 'string'],
+
+            'logical_context.outcomes.*.activities.intermediate_outcomes' => ['required', 'array'],
+            'logical_context.outcomes.*.activities.intermediate_outcomes.*' => ['required', 'string'],
 
             'logical_context.outcomes.*.activities.impacts' => ['required', 'array'],
             'logical_context.outcomes.*.activities.impacts.*' => ['required', 'string'],
 
-            'intervention_strategy' => ['nullable', 'string'],
+            'intervention_strategy' => ['nullable', 'array'],
+            'intervention_strategy.*' => ['required', 'string'],
             
             'partners' => ['required', 'array'],
             'partners.*' => ['required', 'array'],
