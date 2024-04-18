@@ -48,6 +48,7 @@ class StoreProjectRequest extends FormRequest
             'logical_context' => ['required', 'array'],
 
             'logical_context.budget' => ['required', 'numeric'],
+            'logical_context.budget_currency' => ['nullable', 'string'],
 
             'logical_context.objectives' => ['nullable', 'array'],
             'logical_context.objectives.*' => ['nullable', 'string'],
@@ -107,16 +108,14 @@ class StoreProjectRequest extends FormRequest
             'budget_plan.*.activities.*.title' => ['required', 'string'],
             'budget_plan.*.activities.*.budget' => ['required', 'numeric'],
 
-            'budget_currency' => ['nullable', 'string'],
-
             'calendar' => ['nullable', 'array'],
             'calendar.*' => ['required', 'array'],
             'calendar.*.outcome' => ['required', 'string'],
             'calendar.*.activities' => ['required', 'array'],
             'calendar.*.activities.*' => ['required', 'array'],
             'calendar.*.activities.*.title' => ['required', 'string'],
-            'calendar.*.activities.*.start_date' => ['required', 'datetime'],
-            'calendar.*.activities.*.end_date' => ['required', 'datetime'],
+            'calendar.*.activities.*.start_date' => ['required', 'date'],
+            'calendar.*.activities.*.end_date' => ['required', 'date'],
         ];
     }
 
