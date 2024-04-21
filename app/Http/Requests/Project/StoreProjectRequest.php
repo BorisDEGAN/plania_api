@@ -66,11 +66,11 @@ class StoreProjectRequest extends FormRequest
             'logical_context.outcomes.*.activities' => ['required', 'array'],
             'logical_context.outcomes.*.activities.*' => ['required', 'array'],
 
-            'logical_context.outcomes.*.activities.title' => ['required', 'string'],
+            'logical_context.outcomes.*.activities.*.title' => ['required', 'string'],
 
             
-            'logical_context.outcomes.*.activities.effects' => ['required', 'array'],
-            'logical_context.outcomes.*.activities.effects.*' => ['required', 'string'],
+            'logical_context.outcomes.*.activities.*.effects' => ['required', 'array'],
+            'logical_context.outcomes.*.activities.*.effects.*' => ['required', 'string'],
 
 
             'intervention_strategies' => ['nullable', 'array'],

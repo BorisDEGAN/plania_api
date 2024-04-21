@@ -246,44 +246,80 @@
                     },
                     {
                         "title": "Communautés bénéficiaires plus conscientes de l’importance de la promotion des enfants handicapés par le sport et du jeu",
+                        "immediate_outcomes" : [
+                            "Connaissances des parents et membres des communautés sur le handicap améliorées",
+                            "Attitudes des parents et et membres des communautés vis-à-vis du handicap améliorées "
+                        ],
+                        "intermediate_outcomes" : ["Communautés bénéficiaires plus conscientes de la promotion des enfants handicapés par le sport et le jeu"],
+                        "impacts" : [],
                         "activities": [
                             {
                                 "title" : "Organiser des ateliers de sensibilisation sur l’importance du sport et des jeux pour le développement des enfants handicapés",
-                                "effects" : [""]
+                                "effects" : ["Les parents savent et citent les avantages du sport et des jeux pour l'enfant handicapé"]
                             },
                             {
                                 "title" : "Recruter un Consultant sur le handisport",
-                                "effects" : [""]
+                                "effects" : ["Un Consultant en handi–sport est recruté"]
                             },
                             {
                                 "title" : "Former les enseignants/encadreurs sur le handisport",
-                                "effects" : [""]
+                                "effects" : ["Les enseignants/encadreurs des enfants handicapes sont formes sur le handi sport"]
                             },
                             {
                                 "title" : "Organiser/Soutenir les compétitions en faveur des enfants et jeunes handicapés au niveau local et national",
-                                "effects" : [""]
+                                "effects" : ["Au moins une compétition annuelle est organisée au profit des enfants handicapes"]
                             },
                             {
                                 "title" : "Organiser des festivals de jeux au profit des enfants handicapés ciblés",
-                                "effects" : [""]
+                                "effects" : ["Des festivals de jeux sont organises au profit des enfants handicapes bénéficiaires"]
                             },
                             {
                                 "title" : "Recruter des athlètes Supporteurs/Ambassadeurs handicapés pour soutenir les activités et les faire participer aux activités",
-                                "effects" : [""]
+                                "effects" : ["Des athlètes supporters/ ambassadeurs sont recrutes et participent aux grandes activités de RTP"]
                             }
                         ]
                     },
                     {
                         "title": "Meilleure acceptation des personnes handicapées au niveau communautaire et national",
+                        "immediate_outcomes" : [
+                            "Connaissances des acteurs de la société civile sur le handicap ameliorées ",
+                            "Attitudes des décideurs publics et détenteurs de pouvoir locaux et nationaux sur le handicap améliorées"
+                        ],
+                        "intermediate_outcomes" : ["Meilleure acceptation des personnes handicapées au niveau communautaire et national."],
+                        "impacts" : [],
                         "activities": [
-                            "Réaliser des émissions radiodiffusées et télévisées sur le droit des enfants handicapés au jeu et au sport",
-                            "Organiser des ateliers thématiques pour accroître le soutien des parents aux enfants handicapés",
-                            "Organiser des plaidoyers à l’endroit des responsables d’institution et autorités gouvernementales pour une prise en charge éducative des enfants handicapés",
-                            "Organiser des campagnes de sensibilisation à l’endroit des parents sur les droits des enfants handicapés",
-                            "Organiser des campagnes de mobilisation sociale des communautés autour de la prise en charge des enfants handicapés",
-                            "Sensibiliser les parents sur l’importance des activités de rééducation des enfants handicapés visuels et auditifs",
-                            "Organiser des compétitions d'artistes sur la promotion des droits des enfants handicapés",
-                            "Célébrer les événements spéciaux au profit des enfants handicapés"
+                            {
+                                "title" : "Réaliser des émissions radiodiffusées et télévisées sur le droit des enfants handicapés au jeu et au sport",
+                                "effects" : ["Des émissions télévisées et radiodiffusées sont organisées sur le droit des enfants handicapes au jeu et au sport"]
+                            },
+                            {
+                                "title" : "Organiser des ateliers thématiques pour accroître le soutien des parents aux enfants handicapés",
+                                "effects" : ["Des ateliers thématiques sont organises au profit des parents des enfants handicapes"]
+                            },
+                            {
+                                "title" : "Organiser des plaidoyers à l’endroit des responsables d’institution et autorités gouvernementales pour une prise en charge éducative des enfants handicapés",
+                                "effects" : ["Des plaidoyers sont organises au profit des responsables d'institution et autorités gouvernementales pour une meilleure prise en charge éducatives des enfants handicapes"]
+                            },
+                            {
+                                "title" : "Organiser des campagnes de sensibilisation à l’endroit des parents sur les droits des enfants handicapés",
+                                "effects" : ["Des campagnes de sensibilisation sont organisées en direction des parents sur les droits des enfants handicapes"]
+                            },
+                            {
+                                "title" : "Organiser des campagnes de mobilisation sociale des communautés autour de la prise en charge des enfants handicapés",
+                                "effects" : ["Des caravanes et activités de mobilisation des communautés sont organisées dans les zones d'intervention du projet"]
+                            },
+                            {
+                                "title" : "Sensibiliser les parents sur l’importance des activités de rééducation des enfants handicapés visuels et auditifs",
+                                "effects" : ["parents plus conscients de la nécessité de rééduquer leurs enfants handicapes"]
+                            },
+                            {
+                                "title" : "Organiser des compétitions d'artistes sur la promotion des droits des enfants handicapés",
+                                "effects" : ["Des compétitions d'artistes sont organisées sur la promotion du droit des enfants handicapes"]
+                            },
+                            {
+                                "title" : "Célébrer les événements spéciaux au profit des enfants handicapés",
+                                "effects" : ["Des événements spéciaux sont célébrés à l'échelle locale et nationale"]
+                            }
                         ]
                     }
                 ]
