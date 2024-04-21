@@ -18,7 +18,7 @@ class ProjectListResource extends JsonResource
         return [
             'id' => $this->id,
             'title' => $this->title,
-            'description' => $this->description,
+            'overview' => $this->overview,
             'user_id' => $this->user_id,
             'status' => $this->status,
             'user' => new UserListResource($this->user),
