@@ -36,7 +36,7 @@ return new class extends Migration
             $table->double('budget')->nullable();
             $table->string('budget_currency')->nullable();
             
-            $table->foreignId('user_id')->nullable()->constrained();
+            $table->foreignId('project_id')->nullable()->constrained();
             $table->timestamps();
             $table->softDeletes();
         });

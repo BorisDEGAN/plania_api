@@ -2,14 +2,15 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestContoller;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\PermissionController;
-use App\Http\Controllers\AppConfigurationController;
-use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ProjectPlanController;
 use App\Http\Controllers\StatistiquesController;
-use App\Http\Controllers\TestContoller;
+use App\Http\Controllers\AppConfigurationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,4 +62,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     //Projects
     Route::post('projects/search', [ProjectController::class, 'search'])->name('projects.search');
     Route::apiResource('projects', ProjectController::class);
+
+    //Project Plans
+    Route::post('project-plans/search', [ProjectPlanController::class, 'search'])->name('project-plans.search');
+    Route::apiResource('project-plans', ProjectPlanController::class);
 });
