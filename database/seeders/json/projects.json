@@ -323,7 +323,377 @@
                         ]
                     }
                 ]
-            }
+            },
+            "intervention_strategies" : [
+                "Le développement de compétences de vie \n Cet axe dont l’objectif est de faire adopter des comportements et compétences de vie saines par les enfants handicapes se fera par les exercices de stimulation, d’éveil, de rééducation mais aussi par la mise en œuvre des modules de Right To Play relatifs au sain développement physique, émotionnel, intellectuel et socio sanitaire de l’enfant et celui relatif a la lutte préventive contre le VIH SIDA. A cet effet le corps d’encadrement sera formé et des équipements et matériels de jeux, d’éveil et de stimulation seront donnés afin de faciliter les exercices et activités susceptibles de leur permettre d’adopter les comportements et attitudes de vie attendues d’eux au bout des trois ans d’intervention."
+            ],
+            "patners" : [
+                {
+                    "name" : "Right To Play"
+                },
+                {
+                    "name" : "L’Ambassade des pays Bas"
+                },
+                {
+                    "name" : "Ministère de la Famille et de l’Enfant"
+                },
+                {
+                    "name" : "Ministère des Enseignements maternels et primaires"
+                }
+            ],
+            "quality_monitoring" : ["L’objectif central du dispositif de suivi du présent programme est de garantir aussi bien l’assurance qualité que le partage de connaissance à tous les niveaux de la mise en œuvre. Ce dispositif vise à capter la participation des enfants et des encadreurs/Animateurs dans toutes les zones du programme et a atteindre un nombre plus grand d’enfants handicapes visuels et auditifs."],
+            
+            "performance_matrix" : [
+                {
+                    "effect" : "# d'enfants ayant réussi aux examens chaque année dans les centres",
+                    "verification_sources" : [
+                        "Statistiques scolaires",
+                        "Autorités des Centres"
+                    ],
+                    "collect_tools" : [
+                        "Recherche documentaire",
+                        "Entretien"
+                    ],
+                    "frequency" : "Annuelle",
+                    "analyse" : "Le Coordonnateur de Projet consulte les statistiques scolaires et met régulièrement a jour"
+                },
+                {
+                    "effect" : "Proportion de parents déclarant avoir noté une progression dans le rendement scolaire des enfants ciblés.",
+                    "verification_sources" : [
+                        "Parents des enfants",
+                        "rapports d’activités"
+                    ],
+                    "collect_tools" : [
+                        "Interview",
+                        "Focus group"
+                    ],
+                    "frequency" : "Annuelle",
+                    "analyse" : "Coordonnateur de Projet recherche les informations, les traite et les documente pour les fins d’évaluation"
+                },
+                {
+                    "effect" : "# d'enfants/parents appréciant positivement les nouvelles techniques d'enseignement des encadreurs",
+                    "verification_sources" : [
+                        "Rapports d’activités",
+                        "Parents",
+                        "Enfants"
+                    ],
+                    "collect_tools" : [
+                        "Entretien",
+                        "Focus group"
+                    ],
+                    "frequency" : "Semestrielle",
+                    "analyse" : "Les Superviseurs de Projet recueillent les informations et les transmettent au Coordonnateur de Projet pour analyse et documentation"
+                }
+            ],
+            "budget_plan" : [
+                {
+                    "section" : "AMELIORATION DE LA QUALITE DE L'EDUCATION DANS LES CENTRES D'HANDICAPES",
+                    "activities" : [
+                        {
+                            "title" : "Evaluer les besoins en formation des enseignants sur le nouveau programme",
+                            "budget" : "750 000"
+                        },
+                        {
+                            "title" : "Recruter des  consultants sur le nouveau programme d’enseignement et encadrement handicapés",
+                            "budget" : "3 000 000"
+                        },
+                        {
+                            "title" : "Former/Recycler les enseignants sur le nouveau programme d’enseignement.",
+                            "budget" : "5 000 000"
+                        },
+                        {
+                            "title" : "Recruter un Consultant spécialiste de l’encadrement des enfants handicapés",
+                            "budget" : "3 000 000"
+                        },
+                        {
+                            "title" : "Former/Recycler les enseignants aux techniques et méthodes d’encadrement des enfants handicapés",
+                            "budget" : "5 000 000"
+                        },
+                        {
+                            "title" : "Ateliers d’adaptation des programmes d'enseignement aux handicaps des enfants",
+                            "budget" : "4 500 000"
+                        },
+                        {
+                            "title" : "Doter les centres de matériels didactiques",
+                            "budget" : "12 000 000"
+                        },
+                        {
+                            "title" : "Construire / Rehabiliter les salles de classes",
+                            "budget" : "10 000 000"
+                        },
+                        {
+                            "title" : "Doter les meilleurs élèves de matériels et fournitures scolaires",
+                            "budget" : "5 500 000"
+                        }
+                        
+                    ]
+                },
+                {
+                    "section" : "Appui à l'installation des salles de transcription",
+                    "activities" :  [
+                        {
+                            "title" : "Appui à la construction des salles de transcription",
+                            "budget" : "5 000 000"
+                        },
+                        {
+                            "title" : "Achat de matériels et équipement pour l'installation d'une  unité de transcription des livres et documents",
+                            "budget" : "4 000 000"
+                        }
+                    ]
+                }
+            ],
+            "calendar" : [
+                    {
+                        "outcome": "Meilleure performance scolaire des enfants handicapés des centres bénéficiaires",
+                        "activities": [
+                            {
+                                "title" : "Appuyer l’installation d’une unité de transcription des livres et documents pour les aveugles",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Evaluer les besoins en formation des enseignants sur le nouveau programme d’enseignement",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Recruter un consultant sur le nouveau programme d’enseignement",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Former/Recycler les enseignants sur le nouveau programme d’enseignement",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Recruter un Consultant spécialiste de l’encadrement des enfants handicapés",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Former/Recycler les enseignants aux techniques et méthodes d’encadrement des enfants handicapés",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Doter les centres de matériels didactiques nécessaires a la scolarisation des enfants",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Organiser des ateliers d’adaptation de la disposition spatiale aux enfants handicapés (Sourds)",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Construire/Réhabiliter les salles de classes",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Doter les meilleurs élèves de matériels et fournitures scolaires",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            }
+                        ]
+                    },
+                    {
+                        "outcome": "L’environnement d’apprentissage des enfants handicapés visuels et auditifs plus attrayant et amélioré",
+                        "activities": [
+                            {
+                                "title" : "Former les encadreurs et enseignants sur le module de développement global de l’enfant de RTP",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Former les enseignants au module de prévention du VIH SIDA de RTP",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Mettre en œuvre les activités régulières de prévention du VIH SIDA",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Mettre en oeuvre au profit des enfants les activités régulières de sport et de jeux focalisées sur le développement global de l’enfant",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Doter les centres formés de matériels et d’équipements de sport et de jeux pour la mise en oeuvre des activités régulières",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Doter les centres de matériels audiovisuels",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Assurer un entretien convenable des aires de jeux installées",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Doter les centres ciblés de moustiquaires imprégnées",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Doter les centres de matériels et équipements d’assainissement",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Sensibiliser les acteurs sur les règles d’hygiène et d’assainissement",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Organiser des campagnes de salubrité dans les centres",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Construire/Réhabiliter les infrastructures de sport et de jeux adaptés aux enfants handicapés des centres bénéficiaires",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Equiper les logements en matériels usuels de couchage",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Installer des clubs d’enfants dans les centres pour les activités culturelles",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Appuyer les clubs dans l’élaboration de plans d’action",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Soutenir les plans d’action des clubs mis en place",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Construire/Réhabiliter de nouvelles infrastructures d’accueil (dortoirs) des enfants handicapés dans les centres ciblés",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Construire/réhabiliter les latrines",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Doter les centres de matériels usuels d’entretien des latrines et points d’eau",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Organiser des campagnes de sensibilisation sur l’entretien des infrastructures",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Mettre en place les infrastructures d’eau",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Sensibiliser les acteurs et les enfants des centres sur l’importance des Consultations prénatales et la moustiquaire imprégnée",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            }
+                        ]
+                    },
+                    {
+                        "outcome": "Communautés bénéficiaires plus conscientes de l’importance de la promotion des enfants handicapés par le sport et du jeu",
+                        "activities": [
+                            {
+                                "title" : "Organiser des ateliers de sensibilisation sur l’importance du sport et des jeux pour le développement des enfants handicapés",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Recruter un Consultant sur le handisport",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Former les enseignants/encadreurs sur le handisport",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Organiser/Soutenir les compétitions en faveur des enfants et jeunes handicapés au niveau local et national",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Organiser des festivals de jeux au profit des enfants handicapés ciblés",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Recruter des athlètes Supporteurs/Ambassadeurs handicapés pour soutenir les activités et les faire participer aux activités",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            }
+                        ]
+                    },
+                    {
+                        "outcome": "Meilleure acceptation des personnes handicapées au niveau communautaire et national",
+                        "activities": [
+                            {
+                                "title" : "Réaliser des émissions radiodiffusées et télévisées sur le droit des enfants handicapés au jeu et au sport",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Organiser des ateliers thématiques pour accroître le soutien des parents aux enfants handicapés",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Organiser des plaidoyers à l’endroit des responsables d’institution et autorités gouvernementales pour une prise en charge éducative des enfants handicapés",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Organiser des campagnes de sensibilisation à l’endroit des parents sur les droits des enfants handicapés",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Organiser des campagnes de mobilisation sociale des communautés autour de la prise en charge des enfants handicapés",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Sensibiliser les parents sur l’importance des activités de rééducation des enfants handicapés visuels et auditifs",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Organiser des compétitions d'artistes sur la promotion des droits des enfants handicapés",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            },
+                            {
+                                "title" : "Célébrer les événements spéciaux au profit des enfants handicapés",
+                                "start_date" : "2024-10-31",
+                                "end_date" : "2026-11-30"
+                            }
+                        ]
+                    }
+            ]
             
         }
     ]
