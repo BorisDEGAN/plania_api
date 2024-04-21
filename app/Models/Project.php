@@ -28,30 +28,32 @@ class Project extends Model
 
     protected $fillable = [
         'title',
-        'description',
+        'overview',
         'context',
         'justification',
-        'duration',
+        'description',
+
         'global_objective',
-        'objectives',   
+        'objectives',
+
         'outcomes',
-        'activities',
         'logical_context',
-        'budget_plan',
-        'budget',
-        'budget_currency',
-        'intervention_strategy',
+        'intervention_strategies',
         'quality_monitoring',
         'patners',
         'performance_matrix',
+        'budget_plan',
         'calendar',
+
+        'duration',
+        'budget',
+        'budget_currency',
         'user_id',        
     ];
 
     protected $casts = [
         'objectives' => 'array',
         'outcomes' => 'array',
-        'activities' => 'array',
         'logical_context' => 'array',
         'budget_plan' => 'array',
         'patners' => 'array',

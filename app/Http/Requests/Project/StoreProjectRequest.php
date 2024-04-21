@@ -54,23 +54,24 @@ class StoreProjectRequest extends FormRequest
             'logical_context.outcomes.*' => ['required', 'array'],
             'logical_context.outcomes.*.title' => ['required', 'string'],
 
+            'logical_context.outcomes.*.immediate_outcomes' => ['required', 'array'],
+            'logical_context.outcomes.*.immediate_outcomes.*' => ['required', 'string'],
+
+            'logical_context.outcomes.*.intermediate_outcomes' => ['required', 'array'],
+            'logical_context.outcomes.*.intermediate_outcomes.*' => ['required', 'string'],
+
+            'logical_context.outcomes.*.impacts' => ['required', 'array'],
+            'logical_context.outcomes.*.impacts.*' => ['required', 'string'],
+
             'logical_context.outcomes.*.activities' => ['required', 'array'],
             'logical_context.outcomes.*.activities.*' => ['required', 'array'],
 
             'logical_context.outcomes.*.activities.title' => ['required', 'string'],
 
             
-            'logical_context.outcomes.*.activities.efects' => ['required', 'array'],
-            'logical_context.outcomes.*.activities.efects.*' => ['required', 'string'],
+            'logical_context.outcomes.*.activities.effects' => ['required', 'array'],
+            'logical_context.outcomes.*.activities.effects.*' => ['required', 'string'],
 
-            'logical_context.outcomes.*.activities.immediate_outcomes' => ['required', 'array'],
-            'logical_context.outcomes.*.activities.immediate_outcomes.*' => ['required', 'string'],
-
-            'logical_context.outcomes.*.activities.intermediate_outcomes' => ['required', 'array'],
-            'logical_context.outcomes.*.activities.intermediate_outcomes.*' => ['required', 'string'],
-
-            'logical_context.outcomes.*.activities.impacts' => ['required', 'array'],
-            'logical_context.outcomes.*.activities.impacts.*' => ['required', 'string'],
 
             'intervention_strategies' => ['nullable', 'array'],
             'intervention_strategies.*' => ['required', 'string'],

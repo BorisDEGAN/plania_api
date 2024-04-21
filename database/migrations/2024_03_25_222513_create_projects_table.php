@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('context')->nullable();
             $table->text('justification')->nullable();
             $table->json('description')->nullable();
+            $table->text('global_objective')->nullable();
             $table->json('objectives')->nullable();
 
             //Résultats du projet
