@@ -58,7 +58,9 @@ class Project extends Model
         'budget_plan' => 'array',
         'patners' => 'array',
         'performance_matrix' => 'array',
-        'calendar   ' => 'array',
+        'calendar' => 'array',
+        'quality_monitoring' => 'array',
+        'intervention_strategies' => 'array',
     ];
 
     protected $appends = [

@@ -24,7 +24,7 @@ class StoreProjectRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => ['required', 'string', 'max:255'],
+            'title' => ['nullable', 'string', 'max:255'],
             'overview' => ['nullable', 'string'],
             'context' => ['nullable', 'string'],
             'justification' => ['nullable', 'string'],
@@ -32,88 +32,88 @@ class StoreProjectRequest extends FormRequest
             'duration' => ['nullable', 'integer'],
             'global_objective' => ['nullable', 'string'],
 
-            'objectives' => ['required', 'array'],
-            'objectives.*' => ['required', 'string'],
+            'objectives' => ['nullable', 'array'],
+            'objectives.*' => ['nullable', 'string'],
 
 
-            'outcomes' => ['required', 'array'],
-            'outcomes.*' => ['required', 'array'],
-            'outcomes.*.title' => ['required', 'string'],
-            'outcomes.*.activities' => ['required', 'array'],
-            'outcomes.*.activities.*' => ['required', 'string'],
+            'outcomes' => ['nullable', 'array'],
+            'outcomes.*' => ['nullable', 'array'],
+            'outcomes.*.title' => ['nullable', 'string'],
+            'outcomes.*.activities' => ['nullable', 'array'],
+            'outcomes.*.activities.*' => ['nullable', 'string'],
 
-            'logical_context' => ['required', 'array'],
+            'logical_context' => ['nullable', 'array'],
 
-            'logical_context.budget' => ['required', 'numeric'],
+            'logical_context.budget' => ['nullable', 'numeric'],
             'logical_context.budget_currency' => ['nullable', 'string'],
 
             'logical_context.objectives' => ['nullable', 'array'],
             'logical_context.objectives.*' => ['nullable', 'string'],
             
-            'logical_context.outcomes' => ['required', 'array'],
-            'logical_context.outcomes.*' => ['required', 'array'],
-            'logical_context.outcomes.*.title' => ['required', 'string'],
+            'logical_context.outcomes' => ['nullable', 'array'],
+            'logical_context.outcomes.*' => ['nullable', 'array'],
+            'logical_context.outcomes.*.title' => ['nullable', 'string'],
 
-            'logical_context.outcomes.*.immediate_outcomes' => ['required', 'array'],
-            'logical_context.outcomes.*.immediate_outcomes.*' => ['required', 'string'],
+            'logical_context.outcomes.*.immediate_outcomes' => ['nullable', 'array'],
+            'logical_context.outcomes.*.immediate_outcomes.*' => ['nullable', 'string'],
 
-            'logical_context.outcomes.*.intermediate_outcomes' => ['required', 'array'],
-            'logical_context.outcomes.*.intermediate_outcomes.*' => ['required', 'string'],
+            'logical_context.outcomes.*.intermediate_outcomes' => ['nullable', 'array'],
+            'logical_context.outcomes.*.intermediate_outcomes.*' => ['nullable', 'string'],
 
-            'logical_context.outcomes.*.impacts' => ['required', 'array'],
-            'logical_context.outcomes.*.impacts.*' => ['required', 'string'],
+            'logical_context.outcomes.*.impacts' => ['nullable', 'array'],
+            'logical_context.outcomes.*.impacts.*' => ['nullable', 'string'],
 
-            'logical_context.outcomes.*.activities' => ['required', 'array'],
-            'logical_context.outcomes.*.activities.*' => ['required', 'array'],
+            'logical_context.outcomes.*.activities' => ['nullable', 'array'],
+            'logical_context.outcomes.*.activities.*' => ['nullable', 'array'],
 
-            'logical_context.outcomes.*.activities.*.title' => ['required', 'string'],
+            'logical_context.outcomes.*.activities.*.title' => ['nullable', 'string'],
 
             
-            'logical_context.outcomes.*.activities.*.effects' => ['required', 'array'],
-            'logical_context.outcomes.*.activities.*.effects.*' => ['required', 'string'],
+            'logical_context.outcomes.*.activities.*.effects' => ['nullable', 'array'],
+            'logical_context.outcomes.*.activities.*.effects.*' => ['nullable', 'string'],
 
 
             'intervention_strategies' => ['nullable', 'array'],
-            'intervention_strategies.*' => ['required', 'string'],
+            'intervention_strategies.*' => ['nullable', 'string'],
             
-            'partners' => ['required', 'array'],
-            'partners.*' => ['required', 'array'],
-            'partners.*.name' => ['required', 'string'],
-            'partners.*.abilities' => ['required', 'array'],
-            'partners.*.abilities.*' => ['required', 'string'],
+            'partners' => ['nullable', 'array'],
+            'partners.*' => ['nullable', 'array'],
+            'partners.*.name' => ['nullable', 'string'],
+            'partners.*.abilities' => ['nullable', 'array'],
+            'partners.*.abilities.*' => ['nullable', 'string'],
             
             'quality_monitoring' => ['nullable', 'array'],
             'quality_monitoring.*' => ['nullable', 'string'],
             
             'performance_matrix' => ['nullable', 'array'],
-            'performance_matrix.*' => ['required', 'array'],
-            'performance_matrix.*.effect' => ['required', 'string'],
+            'performance_matrix.*' => ['nullable', 'array'],
+            'performance_matrix.*.effect' => ['nullable', 'string'],
 
-            'performance_matrix.*.verification_sources' => ['required', 'array'],
-            'performance_matrix.*.verification_sources.*' => ['required', 'string'],
+            'performance_matrix.*.verification_sources' => ['nullable', 'array'],
+            'performance_matrix.*.verification_sources.*' => ['nullable', 'string'],
 
-            'performance_matrix.*.collect_tools' => ['required', 'array'],
-            'performance_matrix.*.collect_tools.*' => ['required', 'string'],
+            'performance_matrix.*.collect_tools' => ['nullable', 'array'],
+            'performance_matrix.*.collect_tools.*' => ['nullable', 'string'],
 
-            'performance_matrix.*.frequency' => ['required', 'string'],
-            'performance_matrix.*.analyse' => ['required', 'string'],
+            'performance_matrix.*.frequency' => ['nullable', 'string'],
+            'performance_matrix.*.analyse' => ['nullable', 'string'],
 
             'budget_plan' => ['nullable', 'array'],
-            'budget_plan.*' => ['required', 'array'],
-            'budget_plan.*.section' => ['required', 'string'],
-            'budget_plan.*.activities' => ['required', 'array'],
-            'budget_plan.*.activities.*' => ['required', 'array'],
-            'budget_plan.*.activities.*.title' => ['required', 'string'],
-            'budget_plan.*.activities.*.budget' => ['required', 'numeric'],
+            'budget_plan.*' => ['nullable', 'array'],
+            'budget_plan.*.section' => ['nullable', 'string'],
+            'budget_plan.*.activities' => ['nullable', 'array'],
+            'budget_plan.*.activities.*' => ['nullable', 'array'],
+            'budget_plan.*.activities.*.title' => ['nullable', 'string'],
+            'budget_plan.*.activities.*.budget' => ['nullable', 'numeric'],
 
             'calendar' => ['nullable', 'array'],
-            'calendar.*' => ['required', 'array'],
-            'calendar.*.outcome' => ['required', 'string'],
-            'calendar.*.activities' => ['required', 'array'],
-            'calendar.*.activities.*' => ['required', 'array'],
-            'calendar.*.activities.*.title' => ['required', 'string'],
-            'calendar.*.activities.*.start_date' => ['required', 'date'],
-            'calendar.*.activities.*.end_date' => ['required', 'date'],
+            'calendar.*' => ['nullable', 'array'],
+            'calendar.*.outcome' => ['nullable', 'string'],
+            'calendar.*.activities' => ['nullable', 'array'],
+            'calendar.*.activities.*' => ['nullable', 'array'],
+            'calendar.*.activities.*.title' => ['nullable', 'string'],
+            'calendar.*.activities.*.start_date' => ['nullable', 'date'],
+            'calendar.*.activities.*.end_date' => ['nullable', 'date'],
         ];
     }
 

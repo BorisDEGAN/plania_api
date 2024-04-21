@@ -18,19 +18,19 @@ return new class extends Migration
             $table->text('overview')->nullable();
             $table->text('context')->nullable();
             $table->text('justification')->nullable();
-            $table->json('description')->nullable();
+            $table->text('description')->nullable();
             $table->text('global_objective')->nullable();
-            $table->json('objectives')->nullable();
+            $table->text('objectives')->nullable();
 
             //Résultats du projet
-            $table->json('outcomes')->nullable();
-            $table->json('logical_context')->nullable();
-            $table->json('intervention_strategies')->nullable();
+            $table->text('outcomes')->nullable();
+            $table->text('logical_context')->nullable();
+            $table->text('intervention_strategies')->nullable();
             $table->text('quality_monitoring')->nullable();
-            $table->json('patners')->nullable();
-            $table->json('performance_matrix')->nullable();
-            $table->json('budget_plan')->nullable();
-            $table->json('calendar')->nullable();
+            $table->text('patners')->nullable();
+            $table->text('performance_matrix')->nullable();
+            $table->text('budget_plan')->nullable();
+            $table->text('calendar')->nullable();
             
             $table->integer('duration')->nullable();
             $table->double('budget')->nullable();
