@@ -25,9 +25,10 @@ class StoreProjectRequest extends FormRequest
     {
         return [
             'title' => ['required', 'string', 'max:255'],
-            'description' => ['nullable', 'string'],
+            'overview' => ['nullable', 'string'],
             'context' => ['nullable', 'string'],
             'justification' => ['nullable', 'string'],
+            'description' => ['nullable', 'string'],
             'duration' => ['nullable', 'integer'],
             'global_objective' => ['nullable', 'string'],
 
@@ -40,10 +41,6 @@ class StoreProjectRequest extends FormRequest
             'outcomes.*.title' => ['required', 'string'],
             'outcomes.*.activities' => ['required', 'array'],
             'outcomes.*.activities.*' => ['required', 'string'],
-
-            'activities' => ['required', 'array'],
-            'activities.*' => ['required', 'string'],
-
 
             'logical_context' => ['required', 'array'],
 
@@ -75,8 +72,8 @@ class StoreProjectRequest extends FormRequest
             'logical_context.outcomes.*.activities.impacts' => ['required', 'array'],
             'logical_context.outcomes.*.activities.impacts.*' => ['required', 'string'],
 
-            'intervention_strategy' => ['nullable', 'array'],
-            'intervention_strategy.*' => ['required', 'string'],
+            'intervention_strategies' => ['nullable', 'array'],
+            'intervention_strategies.*' => ['required', 'string'],
             
             'partners' => ['required', 'array'],
             'partners.*' => ['required', 'array'],
