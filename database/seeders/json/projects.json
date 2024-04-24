@@ -327,7 +327,7 @@
             "intervention_strategies" : [
                 "Le développement de compétences de vie \n Cet axe dont l’objectif est de faire adopter des comportements et compétences de vie saines par les enfants handicapes se fera par les exercices de stimulation, d’éveil, de rééducation mais aussi par la mise en œuvre des modules de Right To Play relatifs au sain développement physique, émotionnel, intellectuel et socio sanitaire de l’enfant et celui relatif a la lutte préventive contre le VIH SIDA. A cet effet le corps d’encadrement sera formé et des équipements et matériels de jeux, d’éveil et de stimulation seront donnés afin de faciliter les exercices et activités susceptibles de leur permettre d’adopter les comportements et attitudes de vie attendues d’eux au bout des trois ans d’intervention."
             ],
-            "patners" : [
+            "partners" : [
                 {
                     "name" : "Right To Play"
                 },
@@ -342,7 +342,7 @@
                 }
             ],
             "quality_monitoring" : ["L’objectif central du dispositif de suivi du présent programme est de garantir aussi bien l’assurance qualité que le partage de connaissance à tous les niveaux de la mise en œuvre. Ce dispositif vise à capter la participation des enfants et des encadreurs/Animateurs dans toutes les zones du programme et a atteindre un nombre plus grand d’enfants handicapes visuels et auditifs."],
-            
+
             "performance_matrix" : [
                 {
                     "effect" : "# d'enfants ayant réussi aux examens chaque année dans les centres",
@@ -425,7 +425,7 @@
                             "title" : "Doter les meilleurs élèves de matériels et fournitures scolaires",
                             "budget" : "5 500 000"
                         }
-                        
+
                     ]
                 },
                 {
@@ -694,7 +694,7 @@
                         ]
                     }
             ]
-            
+
         }
     ]
 }

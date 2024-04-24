@@ -40,7 +40,7 @@ class ProjectPlan extends Model
         'logical_context',
         'intervention_strategies',
         'quality_monitoring',
-        'patners',
+        'partners',
         'performance_matrix',
         'budget_plan',
         'calendar',
@@ -50,9 +50,9 @@ class ProjectPlan extends Model
 
         'new_budget',
         'new_duration',
-        
+
         'budget_currency',
-        'project_id',        
+        'project_id',
     ];
 
     protected $casts = [
@@ -60,7 +60,7 @@ class ProjectPlan extends Model
         'outcomes' => 'array',
         'logical_context' => 'array',
         'budget_plan' => 'array',
-        'patners' => 'array',
+        'partners' => 'array',
         'performance_matrix' => 'array',
         'calendar' => 'array',
         'quality_monitoring' => 'array',

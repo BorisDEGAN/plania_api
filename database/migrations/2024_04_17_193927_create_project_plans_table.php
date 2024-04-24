@@ -27,15 +27,15 @@ return new class extends Migration
             $table->text('logical_context')->nullable();
             $table->text('intervention_strategies')->nullable();
             $table->text('quality_monitoring')->nullable();
-            $table->text('patners')->nullable();
+            $table->text('partners')->nullable();
             $table->text('performance_matrix')->nullable();
             $table->text('budget_plan')->nullable();
             $table->text('calendar')->nullable();
-            
+
             $table->integer('duration')->nullable();
             $table->double('budget')->nullable();
             $table->string('budget_currency')->nullable();
-            
+
             $table->foreignId('project_id')->nullable()->constrained();
 
             $table->string('new_budget')->nullable();
