@@ -40,8 +40,7 @@ class StoreProjectRequest extends FormRequest
 
             'logical_context' => ['nullable', 'array'],
 
-            'logical_context.impacts' => ['nullable', 'array'],
-            'logical_context.impacts.*' => ['nullable', 'string'],
+            'logical_context.impact' => ['nullable', 'string'],
 
             'logical_context.intermediate_outcomes' => ['nullable', 'array'],
             'logical_context.intermediate_outcomes.*' => ['nullable', 'array'],
