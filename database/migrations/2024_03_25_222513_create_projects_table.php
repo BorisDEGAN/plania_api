@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('context')->nullable();
             $table->text('justification')->nullable();
             $table->text('description')->nullable();
+            $table->text('executive_resume')->nullable();
             $table->text('global_objective')->nullable();
             $table->text('objectives')->nullable();
 
@@ -36,7 +37,7 @@ return new class extends Migration
             $table->double('budget')->nullable();
             $table->string('budget_currency')->nullable();
 
-            $table->foreignId('project_id')->nullable()->constrained();
+            // $table->foreignId('project_id')->nullable()->constrained();
             $table->timestamps();
             $table->softDeletes();
         });

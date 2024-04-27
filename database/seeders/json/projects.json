@@ -81,166 +81,167 @@
                 }
             ],
             "logical_context" : {
-                "budget" : "1 500 029",
-                "budget_currency" : "EUR",
-                "objectives" : [
-                    "Meilleure performance scolaire des enfants handicapés des centres bénéficiaires",
-                    "Environnement d’apprentissage des enfants handicapés visuels et auditifs plus attrayant et amélioré",
-                    "Communautés bénéficiaires plus conscientes de la promotion des enfants handicapés par le sport et du jeu",
-                    "Meilleure acceptation des personnes handicapées au niveau communautaire et national"
+                "impacts" : [
+                    "Création d'un environnement de soutien a la promotion des personnes handicapes",
+                    "Enfants handicapes plus épanouis et plus gais",
+                    "Centres de prise en charge des enfants handicapes plus renforces"
                 ],
-                "outcomes" : [
+                "intermediate_outcomes" : [
                     {
                         "title": "Meilleure performance scolaire des enfants handicapés des centres bénéficiaires",
                         "immediate_outcomes" : [
-                            "Connaissances et aptitudes enseignants pour assurer un encadrement efficace des enfants vivant avec handicap renforcées",
-                            "Capacité d'accueil des centres d'éducation des enfants vivant avec handicap visuels et auditifs renforcée"
-                        ],
-                        "intermediate_outcomes" : ["Meilleure performance scolaire des enfants handicapés des centres bénéficiaires"],
-                        "impacts" : [
-                            "Création d'un environnement de soutien a la promotion des personnes handicapes",
-                            "Enfants handicapes plus épanouis et plus gais",
-                            "Centres de prise en charge des enfants handicapes plus renforces"
-                        ],
-                        "activities": [
                             {
-                                "title" : "Appuyer l’installation d’une unité de transcription des livres et documents pour les aveugles",
-                                "effects" : ["Une unité de transcription des livres est installée pour 1 centre d'aveugles et est fonctionnel"]
+                                "title" : "Connaissances et aptitudes enseignants pour assurer un encadrement efficace des enfants vivant avec handicap renforcées",
+                                "activites" : [
+                                    {
+                                        "title" : "Appuyer l’installation d’une unité de transcription des livres et documents pour les aveugles",
+                                        "effect" : ["Une unité de transcription des livres est installée pour 1 centre d'aveugles et est fonctionnel"]
+                                    },
+                                    {
+                                        "title" : "Evaluer les besoins en formation des enseignants sur le nouveau programme d’enseignement",
+                                        "effect" : ["Les besoins en formation des encadreurs/enseignants sont évalués"]
+                                    },
+                                    {
+                                        "title" : "Recruter un consultant sur le nouveau programme d’enseignement",
+                                        "effect" : ["Un Consultant Nouveau Programme est recruté"]
+                                    },
+                                    {
+                                        "title" : "Former/Recycler les enseignants sur le nouveau programme d’enseignement",
+                                        "effect" : ["les enseignants/encadreurs identifies sont formes sur le nouveau programme d'enseignement"]
+                                    },
+                                    {
+                                        "title" : "Recruter un Consultant spécialiste de l’encadrement des enfants handicapés",
+                                        "effect" : ["Un Spécialiste en encadrement des enfants handicapes visuels et auditifs est recrute"]
+                                    },
+                                    {
+                                        "title" : "Former/Recycler les enseignants aux techniques et méthodes d’encadrement des enfants handicapés",
+                                        "effect" : ["les enseignants bénéficiaires sont formes aux techniques d'encadrement des enfants handicapes visuels et auditifs"]
+                                    }
+                                ]
                             },
                             {
-                                "title" : "Evaluer les besoins en formation des enseignants sur le nouveau programme d’enseignement",
-                                "effects" : ["Les besoins en formation des encadreurs/enseignants sont évalués"]
-                            },
-                            {
-                                "title" : "Recruter un consultant sur le nouveau programme d’enseignement",
-                                "effects" : ["Un Consultant Nouveau Programme est recruté"]
-                            },
-                            {
-                                "title" : "Former/Recycler les enseignants sur le nouveau programme d’enseignement",
-                                "effects" : ["les enseignants/encadreurs identifies sont formes sur le nouveau programme d'enseignement"]
-                            },
-                            {
-                                "title" : "Recruter un Consultant spécialiste de l’encadrement des enfants handicapés",
-                                "effects" : ["Un Spécialiste en encadrement des enfants handicapes visuels et auditifs est recrute"]
-                            },
-                            {
-                                "title" : "Former/Recycler les enseignants aux techniques et méthodes d’encadrement des enfants handicapés",
-                                "effects" : ["les enseignants bénéficiaires sont formes aux techniques d'encadrement des enfants handicapes visuels et auditifs"]
-                            },
-                            {
-                                "title" : "Doter les centres de matériels didactiques nécessaires a la scolarisation des enfants",
-                                "effects" : ["Les centres bénéficiaires sont dotes de matériels didactiques"]
-                            },
-                            {
-                                "title" : "Organiser des ateliers d’adaptation de la disposition spatiale aux enfants handicapés (Sourds)",
-                                "effects" : ["Des ateliers d'adaptation de la disposition spatiale pour le NPE sont organises"]
-                            },
-                            {
-                                "title" : "Construire/Réhabiliter les salles de classes",
-                                "effects" : ["Des salles de classes sont réhabilitées dans les centres bénéficiaires"]
-                            },
-                            {
-                                "title" : "Doter les meilleurs élèves de matériels et fournitures scolaires",
-                                "effects" : ["Les meilleurs élèves sont primés."]
+                                "title" : "Capacité d'accueil des centres d'éducation des enfants vivant avec handicap visuels et auditifs renforcée",
+                                "activites" : [
+                                    {
+                                        "title" : "Doter les centres de matériels didactiques nécessaires a la scolarisation des enfants",
+                                        "effect" : ["Les centres bénéficiaires sont dotes de matériels didactiques"]
+                                    },
+                                    {
+                                        "title" : "Organiser des ateliers d’adaptation de la disposition spatiale aux enfants handicapés (Sourds)",
+                                        "effect" : ["Des ateliers d'adaptation de la disposition spatiale pour le NPE sont organises"]
+                                    },
+                                    {
+                                        "title" : "Construire/Réhabiliter les salles de classes",
+                                        "effect" : ["Des salles de classes sont réhabilitées dans les centres bénéficiaires"]
+                                    },
+                                    {
+                                        "title" : "Doter les meilleurs élèves de matériels et fournitures scolaires",
+                                        "effect" : ["Les meilleurs élèves sont primés."]
+                                    }
+                                ]
                             }
                         ]
                     },
                     {
-                        "title": "L’environnement d’apprentissage des enfants handicapés visuels et auditifs plus attrayant et amélioré",
+                        "title": "Environnement d’apprentissage et techniques d'enseignement  plus attrayant et amélioré",
                         "immediate_outcomes" : [
-                            "Compétences de la vie courante développées chez les enfants vivant avec handicap visuel et auditif ciblés par le projet",
-                            "Accès des enfants vivant avec handicap visuel et auditif plus accru aux mesures d'hygiène et d'eau dans les centres d'éducation ciblées"
-                        ],
-                        "intermediate_outcomes" : ["Environnement d’apprentissage et techniques d'enseignement  plus attrayant et amélioré"],
-                        "impacts" : [],
-                        "activities": [
                             {
-                                "title" : "Former les encadreurs et enseignants sur le module de développement global de l’enfant de RTP",
-                                "effects" : [" Les enseignants et encadreurs sont formes aux modules de développement global de l'enfant."]
+                                "title" : "Compétences de la vie courante développées chez les enfants vivant avec handicap visuel et auditif ciblés par le projet",
+                                "activties" : [
+                                    {
+                                        "title" : "Former les encadreurs et enseignants sur le module de développement global de l’enfant de RTP",
+                                        "effect" : [" Les enseignants et encadreurs sont formes aux modules de développement global de l'enfant."]
+                                    },
+                                    {
+                                        "title" : "Former les enseignants au module de prévention du VIH SIDA de RTP",
+                                        "effect" : ["Les enseignants et encadreurs sont formes aux modules de de prévention du VIH SIDA."]
+                                    },
+                                    {
+                                        "title" : "Mettre en œuvre les activités régulières de prévention du VIH SIDA",
+                                        "effect" : ["Les activités régulières (2 fois par semaine) de développement holistique sont conduites au profit des enfants handicapes bénéficiaires."]
+                                    },
+                                    {
+                                        "title" : "Mettre en oeuvre au profit des enfants les activités régulières de sport et de jeux focalisées sur le développement global de l’enfant",
+                                        "effect" : ["Les activités régulières de prévention du VIH/SIDA  (2 fois par semaine) sont conduites au profit des enfants handicapes bénéficiaires."]
+                                    },
+                                    {
+                                        "title" : "Doter les centres formés de matériels et d’équipements de sport et de jeux pour la mise en oeuvre des activités régulières",
+                                        "effect" : ["Des matériels/équipements de jeux et de sport sont fournis aux centres bénéficiaires pour la mise en oeuvre des activités régulières"]
+                                    }
+                                ]
                             },
                             {
-                                "title" : "Former les enseignants au module de prévention du VIH SIDA de RTP",
-                                "effects" : ["Les enseignants et encadreurs sont formes aux modules de de prévention du VIH SIDA."]
-                            },
-                            {
-                                "title" : "Mettre en œuvre les activités régulières de prévention du VIH SIDA",
-                                "effects" : ["Les activités régulières (2 fois par semaine) de développement holistique sont conduites au profit des enfants handicapes bénéficiaires."]
-                            },
-                            {
-                                "title" : "Mettre en oeuvre au profit des enfants les activités régulières de sport et de jeux focalisées sur le développement global de l’enfant",
-                                "effects" : ["Les activités régulières de prévention du VIH/SIDA  (2 fois par semaine) sont conduites au profit des enfants handicapes bénéficiaires."]
-                            },
-                            {
-                                "title" : "Doter les centres formés de matériels et d’équipements de sport et de jeux pour la mise en oeuvre des activités régulières",
-                                "effects" : ["Des matériels/équipements de jeux et de sport sont fournis aux centres bénéficiaires pour la mise en oeuvre des activités régulières"]
-                            },
-                            {
-                                "title" : "Doter les centres de matériels audiovisuels",
-                                "effects" : ["Chaque centre dispose d'au moins 1 kit de matériel audiovisuel"]
-                            },
-                            {
-                                "title" : "Assurer un entretien convenable des aires de jeux installées",
-                                "effects" : ["Les aires de jeux installées sont entretenues"]
-                            },
-                            {
-                                "title" : "Doter les centres ciblés de moustiquaires imprégnées",
-                                "effects" : ["Chaque enfant des centres cibles dort sous moustiquaire"]
-                            },
-                            {
-                                "title" : "Doter les centres de matériels et équipements d’assainissement",
-                                "effects" : ["Les centres bénéficiaires des interventions sont bien entretenus"]
-                            },
-                            {
-                                "title" : "Sensibiliser les acteurs sur les règles d’hygiène et d’assainissement",
-                                "effects" : ["Les acteurs des centres cibles connaissent l'importance de l'hygiène et l'assainissement"]
-                            },
-                            {
-                                "title" : "Organiser des campagnes de salubrité dans les centres",
-                                "effects" : ["Des campagnes mensuelles de salubrité sont organises dans chaque centre"]
-                            },
-                            {
-                                "title" : "Construire/Réhabiliter les infrastructures de sport et de jeux adaptés aux enfants handicapés des centres bénéficiaires",
-                                "effects" : ["Chaque centre dispose d'au moins une infrastructure de sport et jeu adaptée au type de handicap"]
-                            },
-                            {
-                                "title" : "Equiper les logements en matériels usuels de couchage",
-                                "effects" : ["Chaque enfant dort sur du matériel de couchage adéquat"]
-                            },
-                            {
-                                "title" : "Installer des clubs d’enfants dans les centres pour les activités culturelles",
-                                "effects" : ["Un club d'enfants est installe dans chaque centre cible"]
-                            },
-                            {
-                                "title" : "Appuyer les clubs dans l’élaboration de plans d’action",
-                                "effects" : ["Chaque club d'enfant installe dispose d'un plan d'action annuel"]
-                            },
-                            {
-                                "title" : "Soutenir les plans d’action des clubs mis en place",
-                                "effects" : ["75% des actions prévues dans le plan d'action annuel sont mises en oeuvre"]
-                            },
-                            {
-                                "title" : "Construire/Réhabiliter de nouvelles infrastructures d’accueil (dortoirs) des enfants handicapés dans les centres ciblés",
-                                "effects" : ["De nouvelles infrastructures d'accueil sont construites/réhabilitées pour les enfants"]
-                            },
-                            {
-                                "title" : "Construire/réhabiliter les latrines",
-                                "effects" : ["Chaque centre cible dispose d'au moins une latrine fonctionnelle et adéquate"]
-                            },
-                            {
-                                "title" : "Doter les centres de matériels usuels d’entretien des latrines et points d’eau",
-                                "effects" : ["Chaque centre dispose de matériels d'entretien des latrines"]
-                            },
-                            {
-                                "title" : "Organiser des campagnes de sensibilisation sur l’entretien des infrastructures",
-                                "effects" : ["Des campagnes de sensibilisation sont organisées sur l'entretien des infrastructures "]
-                            },
-                            {
-                                "title" : "Mettre en place les infrastructures d’eau",
-                                "effects" : ["Chaque enfant a accès à l'eau potable dans son centre"]
-                            },
-                            {
-                                "title" : "Sensibiliser les acteurs et les enfants des centres sur l’importance des Consultations prénatales et la moustiquaire imprégnée",
-                                "effects" : ["Les parents et parents citent les avantages lies a l'utilisation de la moustiquaire imprégnée et aux consultations prénatales"]
+                                "title" : "Accès des enfants vivant avec handicap visuel et auditif plus accru aux mesures d'hygiène et d'eau dans les centres d'éducation ciblées",
+                                "activties" : [
+                                    {
+                                        "title" : "Doter les centres de matériels audiovisuels",
+                                        "effect" : ["Chaque centre dispose d'au moins 1 kit de matériel audiovisuel"]
+                                    },
+                                    {
+                                        "title" : "Assurer un entretien convenable des aires de jeux installées",
+                                        "effect" : ["Les aires de jeux installées sont entretenues"]
+                                    },
+                                    {
+                                        "title" : "Doter les centres ciblés de moustiquaires imprégnées",
+                                        "effect" : ["Chaque enfant des centres cibles dort sous moustiquaire"]
+                                    },
+                                    {
+                                        "title" : "Doter les centres de matériels et équipements d’assainissement",
+                                        "effect" : ["Les centres bénéficiaires des interventions sont bien entretenus"]
+                                    },
+                                    {
+                                        "title" : "Sensibiliser les acteurs sur les règles d’hygiène et d’assainissement",
+                                        "effect" : ["Les acteurs des centres cibles connaissent l'importance de l'hygiène et l'assainissement"]
+                                    },
+                                    {
+                                        "title" : "Organiser des campagnes de salubrité dans les centres",
+                                        "effect" : ["Des campagnes mensuelles de salubrité sont organises dans chaque centre"]
+                                    },
+                                    {
+                                        "title" : "Construire/Réhabiliter les infrastructures de sport et de jeux adaptés aux enfants handicapés des centres bénéficiaires",
+                                        "effect" : ["Chaque centre dispose d'au moins une infrastructure de sport et jeu adaptée au type de handicap"]
+                                    },
+                                    {
+                                        "title" : "Equiper les logements en matériels usuels de couchage",
+                                        "effect" : ["Chaque enfant dort sur du matériel de couchage adéquat"]
+                                    },
+                                    {
+                                        "title" : "Installer des clubs d’enfants dans les centres pour les activités culturelles",
+                                        "effect" : ["Un club d'enfants est installe dans chaque centre cible"]
+                                    },
+                                    {
+                                        "title" : "Appuyer les clubs dans l’élaboration de plans d’action",
+                                        "effect" : ["Chaque club d'enfant installe dispose d'un plan d'action annuel"]
+                                    },
+                                    {
+                                        "title" : "Soutenir les plans d’action des clubs mis en place",
+                                        "effect" : ["75% des actions prévues dans le plan d'action annuel sont mises en oeuvre"]
+                                    },
+                                    {
+                                        "title" : "Construire/Réhabiliter de nouvelles infrastructures d’accueil (dortoirs) des enfants handicapés dans les centres ciblés",
+                                        "effect" : ["De nouvelles infrastructures d'accueil sont construites/réhabilitées pour les enfants"]
+                                    },
+                                    {
+                                        "title" : "Construire/réhabiliter les latrines",
+                                        "effect" : ["Chaque centre cible dispose d'au moins une latrine fonctionnelle et adéquate"]
+                                    },
+                                    {
+                                        "title" : "Doter les centres de matériels usuels d’entretien des latrines et points d’eau",
+                                        "effect" : ["Chaque centre dispose de matériels d'entretien des latrines"]
+                                    },
+                                    {
+                                        "title" : "Organiser des campagnes de sensibilisation sur l’entretien des infrastructures",
+                                        "effect" : ["Des campagnes de sensibilisation sont organisées sur l'entretien des infrastructures "]
+                                    },
+                                    {
+                                        "title" : "Mettre en place les infrastructures d’eau",
+                                        "effect" : ["Chaque enfant a accès à l'eau potable dans son centre"]
+                                    },
+                                    {
+                                        "title" : "Sensibiliser les acteurs et les enfants des centres sur l’importance des Consultations prénatales et la moustiquaire imprégnée",
+                                        "effect" : ["Les parents et parents citent les avantages lies a l'utilisation de la moustiquaire imprégnée et aux consultations prénatales"]
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -255,27 +256,27 @@
                         "activities": [
                             {
                                 "title" : "Organiser des ateliers de sensibilisation sur l’importance du sport et des jeux pour le développement des enfants handicapés",
-                                "effects" : ["Les parents savent et citent les avantages du sport et des jeux pour l'enfant handicapé"]
+                                "effect" : ["Les parents savent et citent les avantages du sport et des jeux pour l'enfant handicapé"]
                             },
                             {
                                 "title" : "Recruter un Consultant sur le handisport",
-                                "effects" : ["Un Consultant en handi–sport est recruté"]
+                                "effect" : ["Un Consultant en handi–sport est recruté"]
                             },
                             {
                                 "title" : "Former les enseignants/encadreurs sur le handisport",
-                                "effects" : ["Les enseignants/encadreurs des enfants handicapes sont formes sur le handi sport"]
+                                "effect" : ["Les enseignants/encadreurs des enfants handicapes sont formes sur le handi sport"]
                             },
                             {
                                 "title" : "Organiser/Soutenir les compétitions en faveur des enfants et jeunes handicapés au niveau local et national",
-                                "effects" : ["Au moins une compétition annuelle est organisée au profit des enfants handicapes"]
+                                "effect" : ["Au moins une compétition annuelle est organisée au profit des enfants handicapes"]
                             },
                             {
                                 "title" : "Organiser des festivals de jeux au profit des enfants handicapés ciblés",
-                                "effects" : ["Des festivals de jeux sont organises au profit des enfants handicapes bénéficiaires"]
+                                "effect" : ["Des festivals de jeux sont organises au profit des enfants handicapes bénéficiaires"]
                             },
                             {
                                 "title" : "Recruter des athlètes Supporteurs/Ambassadeurs handicapés pour soutenir les activités et les faire participer aux activités",
-                                "effects" : ["Des athlètes supporters/ ambassadeurs sont recrutes et participent aux grandes activités de RTP"]
+                                "effect" : ["Des athlètes supporters/ ambassadeurs sont recrutes et participent aux grandes activités de RTP"]
                             }
                         ]
                     },
@@ -290,35 +291,35 @@
                         "activities": [
                             {
                                 "title" : "Réaliser des émissions radiodiffusées et télévisées sur le droit des enfants handicapés au jeu et au sport",
-                                "effects" : ["Des émissions télévisées et radiodiffusées sont organisées sur le droit des enfants handicapes au jeu et au sport"]
+                                "effect" : ["Des émissions télévisées et radiodiffusées sont organisées sur le droit des enfants handicapes au jeu et au sport"]
                             },
                             {
                                 "title" : "Organiser des ateliers thématiques pour accroître le soutien des parents aux enfants handicapés",
-                                "effects" : ["Des ateliers thématiques sont organises au profit des parents des enfants handicapes"]
+                                "effect" : ["Des ateliers thématiques sont organises au profit des parents des enfants handicapes"]
                             },
                             {
                                 "title" : "Organiser des plaidoyers à l’endroit des responsables d’institution et autorités gouvernementales pour une prise en charge éducative des enfants handicapés",
-                                "effects" : ["Des plaidoyers sont organises au profit des responsables d'institution et autorités gouvernementales pour une meilleure prise en charge éducatives des enfants handicapes"]
+                                "effect" : ["Des plaidoyers sont organises au profit des responsables d'institution et autorités gouvernementales pour une meilleure prise en charge éducatives des enfants handicapes"]
                             },
                             {
                                 "title" : "Organiser des campagnes de sensibilisation à l’endroit des parents sur les droits des enfants handicapés",
-                                "effects" : ["Des campagnes de sensibilisation sont organisées en direction des parents sur les droits des enfants handicapes"]
+                                "effect" : ["Des campagnes de sensibilisation sont organisées en direction des parents sur les droits des enfants handicapes"]
                             },
                             {
                                 "title" : "Organiser des campagnes de mobilisation sociale des communautés autour de la prise en charge des enfants handicapés",
-                                "effects" : ["Des caravanes et activités de mobilisation des communautés sont organisées dans les zones d'intervention du projet"]
+                                "effect" : ["Des caravanes et activités de mobilisation des communautés sont organisées dans les zones d'intervention du projet"]
                             },
                             {
                                 "title" : "Sensibiliser les parents sur l’importance des activités de rééducation des enfants handicapés visuels et auditifs",
-                                "effects" : ["parents plus conscients de la nécessité de rééduquer leurs enfants handicapes"]
+                                "effect" : ["parents plus conscients de la nécessité de rééduquer leurs enfants handicapes"]
                             },
                             {
                                 "title" : "Organiser des compétitions d'artistes sur la promotion des droits des enfants handicapés",
-                                "effects" : ["Des compétitions d'artistes sont organisées sur la promotion du droit des enfants handicapes"]
+                                "effect" : ["Des compétitions d'artistes sont organisées sur la promotion du droit des enfants handicapes"]
                             },
                             {
                                 "title" : "Célébrer les événements spéciaux au profit des enfants handicapés",
-                                "effects" : ["Des événements spéciaux sont célébrés à l'échelle locale et nationale"]
+                                "effect" : ["Des événements spéciaux sont célébrés à l'échelle locale et nationale"]
                             }
                         ]
                     }
@@ -327,20 +328,72 @@
             "intervention_strategies" : [
                 "Le développement de compétences de vie \n Cet axe dont l’objectif est de faire adopter des comportements et compétences de vie saines par les enfants handicapes se fera par les exercices de stimulation, d’éveil, de rééducation mais aussi par la mise en œuvre des modules de Right To Play relatifs au sain développement physique, émotionnel, intellectuel et socio sanitaire de l’enfant et celui relatif a la lutte préventive contre le VIH SIDA. A cet effet le corps d’encadrement sera formé et des équipements et matériels de jeux, d’éveil et de stimulation seront donnés afin de faciliter les exercices et activités susceptibles de leur permettre d’adopter les comportements et attitudes de vie attendues d’eux au bout des trois ans d’intervention."
             ],
-            "partners" : [
-                {
-                    "name" : "Right To Play"
-                },
-                {
-                    "name" : "L’Ambassade des pays Bas"
-                },
-                {
-                    "name" : "Ministère de la Famille et de l’Enfant"
-                },
-                {
-                    "name" : "Ministère des Enseignements maternels et primaires"
-                }
-            ],
+            "partners" : {
+                "managment_levels" : [
+                    {
+                        "level" : "Niveau central",
+                        "title" : "Comite de Suivi",
+                        "abilities" : [
+                            "S'assurer que le programme est exécuté dans le respect du cadre d'assurance qualité",
+                            "Valider les rapports du COmité de coordination",
+                            "Etudie et valide les plans d'action annuels de l'unité de coordination",
+                            "Assistance Technique appropriée a l'unité de coordination",
+                            "Faire des visites de suivi des activités"
+                        ],
+                        "stakeholders" : [
+                            {
+                                "name" : "Right To Play"
+                            },
+                            {
+                                "name" : "L’Ambassade des pays Bas"
+                            },
+                            {
+                                "name" : "Ministère de la Famille et de l’Enfant"
+                            },
+                            {
+                                "name" : "Ministère des Enseignements maternels et primaires"
+                            }
+                        ]
+                    },
+                    {
+                        "level" : "Niveau intermédiaire",
+                        "title" : "Unité de Coordination",
+                        "abilities" : [
+                            "Responsable de la coordination opérationnelle du programme",
+                            "S'assurer de l'execution diligente des plans d'actions élaborés et validés par le COmité de pilotage",
+                            "Organiser les formations du personnel du programme et des acteurs sur le terrain",
+                            "Organiser le suivi des activites (recueil et analyse des données et témoignages de qualité des participants)",
+                            "Elaborer et soumettre des rapports mensuels, semestriels et annuels du programme et suivre la  progression cers l'atteinte des résultats"
+                        ],
+                        "stakeholders" : [
+                            {
+                                "name" : "Coordonnateur de Programme"
+                            },
+                            {
+                                "name" : "Superviseurs de Programme"
+                            },
+                            {
+                                "name" : "Secrétaire"
+                            },
+                            {
+                                "name" : "Comptable"
+                            }
+                        ]
+                    },
+                    {
+                        "level" : "Niveau opérationnel",
+                        "title" : "Acteurs Locaux",
+                        "abilities" : [
+                            "Mise en oeuvre des activités au profit des enfants",
+                            "Faire particciper tous les enfants handicapés aux activités",
+                            "Elaborer des rapports de suivi",
+                            "Remplir les fiches de suivi convenablement et les transmettre au Superviseurs et/ou Formateur de la zone"
+                        ],
+                        "stakeholders" : []
+                    }
+                ]
+
+            },
             "quality_monitoring" : ["L’objectif central du dispositif de suivi du présent programme est de garantir aussi bien l’assurance qualité que le partage de connaissance à tous les niveaux de la mise en œuvre. Ce dispositif vise à capter la participation des enfants et des encadreurs/Animateurs dans toutes les zones du programme et a atteindre un nombre plus grand d’enfants handicapes visuels et auditifs."],
 
             "performance_matrix" : [
