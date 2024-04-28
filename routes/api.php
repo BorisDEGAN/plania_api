@@ -9,7 +9,7 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\ProjectPlanController;
-use App\Http\Controllers\StatistiquesController;
+use App\Http\Controllers\StatistiqueController;
 use App\Http\Controllers\AppConfigurationController;
 
 /*
@@ -30,6 +30,10 @@ Route::post('login', [AuthController::class, 'login'])->name('login');
 Route::delete('logout', [AuthController::class, 'logout'])->name('logout');
 Route::post('test', [TestContoller::class, 'test'])->name('test');
 
+//Statistiques
+Route::get('statistiques/projects/count', [StatistiqueController::class, 'projectCount'])->name('statistiques.projects.count');
+Route::get('statistiques/project-plans/count', [StatistiqueController::class, 'projectPlanCount'])->name('statistiques.project-plans.count');
+
 // App Configurations
 Route::get('app-configurations', [AppConfigurationController::class, 'index'])->name('app-configurations.index');
 Route::post('app-configurations/search', [AppConfigurationController::class, 'search'])->name('app-configurations.search');
@@ -46,7 +50,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::apiResource('roles', RoleController::class);
     Route::post('roles/{role}/permissions', [RoleController::class, 'permissions'])->name('roles.permissions');
 
-    // User 
+    // User
     Route::post('users/search', [UsersController::class, 'search'])->name('users.search');
     Route::apiResource('users', UsersController::class);
 
@@ -55,9 +59,6 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 
     //Permissions Manage
     Route::post('roles/permissions/manage', [PermissionController::class, 'role_manage']);
-
-    //Statistiques
-    Route::get('stats/projects-stats', [StatistiquesController::class, 'projects_stats']);
 
     //Projects
     Route::post('projects/search', [ProjectController::class, 'search'])->name('projects.search');
