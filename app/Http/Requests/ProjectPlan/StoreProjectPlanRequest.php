@@ -25,8 +25,8 @@ class StoreProjectPlanRequest extends FormRequest
     {
         return [
             "project_id" => ['required', 'integer', 'exists:projects,id'],
-            "new_budget" => ['required', 'string'],
-            "new_duration" => ['required', 'integer'],
+            "new_budget" => ['nullable', 'string'],
+            "new_duration" => ['nullable', 'integer'],
         ];
     }
 
