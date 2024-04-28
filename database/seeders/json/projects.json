@@ -88,7 +88,7 @@
                         "immediate_outcomes" : [
                             {
                                 "title" : "Connaissances et aptitudes enseignants pour assurer un encadrement efficace des enfants vivant avec handicap renforcées",
-                                "activites" : [
+                                "activities" : [
                                     {
                                         "title" : "Appuyer l’installation d’une unité de transcription des livres et documents pour les aveugles",
                                         "effect" : "Une unité de transcription des livres est installée pour 1 centre d'aveugles et est fonctionnel"
@@ -117,7 +117,7 @@
                             },
                             {
                                 "title" : "Capacité d'accueil des centres d'éducation des enfants vivant avec handicap visuels et auditifs renforcée",
-                                "activites" : [
+                                "activities" : [
                                     {
                                         "title" : "Doter les centres de matériels didactiques nécessaires a la scolarisation des enfants",
                                         "effect" : "Les centres bénéficiaires sont dotes de matériels didactiques"
@@ -368,7 +368,7 @@
                             "Responsable de la coordination opérationnelle du programme",
                             "S'assurer de l'execution diligente des plans d'actions élaborés et validés par le COmité de pilotage",
                             "Organiser les formations du personnel du programme et des acteurs sur le terrain",
-                            "Organiser le suivi des activites (recueil et analyse des données et témoignages de qualité des participants)",
+                            "Organiser le suivi des activities (recueil et analyse des données et témoignages de qualité des participants)",
                             "Elaborer et soumettre des rapports mensuels, semestriels et annuels du programme et suivre la  progression cers l'atteinte des résultats"
                         ],
                         "stakeholders" : [
