@@ -35,17 +35,16 @@ class ProjectPlanController extends Controller
         if($title)
         {
             $project_plans = $project_plans->where('title', 'ILIKE', '%'.$title.'%')
-                        ->orWhere('description', 'ILIKE', '%'.$title.'%')
-                        ->orWhere('tags', 'ILIKE', '%'.$title.'%');
+                        ->orWhere('description', 'ILIKE', '%'.$title.'%');
         }
-        
+
         if($description)
         {
             $project_plans = $project_plans->where('description', 'ILIKE', '%'.$description.'%');
         }
 
         if($project_plan_id)
-        {   
+        {
             $project_plans = $project_plans->where('project_id', $project_plan_id);
         }
 
