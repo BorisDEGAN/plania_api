@@ -15,7 +15,9 @@ class StatistiqueController extends Controller
         {
             $counts[$state] = Project::currentStatus($state)->count();
         }
-        return $counts;
+        return [
+            "data"=> $counts
+        ];
     }
 
     public function projectPlanCount()
@@ -25,6 +27,8 @@ class StatistiqueController extends Controller
         {
             $counts[$state] = ProjectPlan::currentStatus($state)->count();
         }
-        return $counts;
+        return [
+            "data"=> $counts
+        ];
     }
 }
