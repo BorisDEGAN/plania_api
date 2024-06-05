@@ -2,7 +2,7 @@ name: Deploy Site on push
 on:
   push:
     branches:
-      - prod
+      - prods
 
 jobs:
   web-deploy:
