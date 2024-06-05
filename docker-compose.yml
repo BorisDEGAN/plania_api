@@ -1,0 +1,23 @@
+version: '3.5'
+
+services:
+  dsapi-dev-app:
+    build:
+      context: '.'
+      args:
+        uid: 1000
+    container_name: plan-api-dev-app
+    ports:
+      - 8068:80
+    environment:
+      - APACHE_RUN_USER=#1000
+      - APACHE_RUN_GROUP=#1000
+    volumes:
+      - .:/var/www/html
+    networks:
+      backend:
+        aliases:
+          - app
+networks:
+  backend:
+    name: backend-network
