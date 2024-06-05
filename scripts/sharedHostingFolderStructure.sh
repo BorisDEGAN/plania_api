@@ -5,3 +5,4 @@ sudo rsync -avhP --progress . "${destinationFolder}/plannia/" --exclude /.git   
 sudo rsync -avhP --stats --progress ./public/ "${destinationFolder}/"
 
 sed -i -e 's/\/\.\.\//\/plannia\//g' "${destinationFolder}/index.php"
+
