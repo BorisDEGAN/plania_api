@@ -143,7 +143,7 @@
                         "immediate_outcomes" : [
                             {
                                 "title" : "Compétences de la vie courante développées chez les enfants vivant avec handicap visuel et auditif ciblés par le projet",
-                                "activties" : [
+                                "activities" : [
                                     {
                                         "title" : "Former les encadreurs et enseignants sur le module de développement global de l’enfant de RTP",
                                         "effect" : " Les enseignants et encadreurs sont formes aux modules de développement global de l'enfant."
@@ -168,7 +168,7 @@
                             },
                             {
                                 "title" : "Accès des enfants vivant avec handicap visuel et auditif plus accru aux mesures d'hygiène et d'eau dans les centres d'éducation ciblées",
-                                "activties" : [
+                                "activities" : [
                                     {
                                         "title" : "Doter les centres de matériels audiovisuels",
                                         "effect" : "Chaque centre dispose d'au moins 1 kit de matériel audiovisuel"
@@ -263,7 +263,7 @@
                             },
                             {
                                 "title" : "Attitudes des parents et et membres des communautés vis-à-vis du handicap améliorées",
-                                "activties" : [
+                                "activities" : [
                                     {
                                         "title" : "Organiser/Soutenir les compétitions en faveur des enfants et jeunes handicapés au niveau local et national",
                                         "effect" : "Au moins une compétition annuelle est organisée au profit des enfants handicapes"
@@ -287,7 +287,7 @@
                         "immediate_outcomes" : [
                             {
                                 "title" : "Connaissances des acteurs de la société civile sur le handicap ameliorées ",
-                                "activties" : [
+                                "activities" : [
                                     {
                                         "title" : "Réaliser des émissions radiodiffusées et télévisées sur le droit des enfants handicapés au jeu et au sport",
                                         "effect" : "Des émissions télévisées et radiodiffusées sont organisées sur le droit des enfants handicapes au jeu et au sport"
@@ -308,7 +308,7 @@
                             },
                             {
                                 "title" : "Attitudes des décideurs publics et détenteurs de pouvoir locaux et nationaux sur le handicap améliorées",
-                                "activties" : [
+                                "activities" : [
                                     {
                                         "title" : "Organiser des campagnes de mobilisation sociale des communautés autour de la prise en charge des enfants handicapés",
                                         "effect" : "Des caravanes et activités de mobilisation des communautés sont organisées dans les zones d'intervention du projet"

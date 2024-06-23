@@ -30,15 +30,14 @@ Route::post('login', [AuthController::class, 'login'])->name('login');
 Route::delete('logout', [AuthController::class, 'logout'])->name('logout');
 Route::post('test', [TestContoller::class, 'test'])->name('test');
 
-//Statistiques
-Route::get('statistiques/projects/count', [StatistiqueController::class, 'projectCount'])->name('statistiques.projects.count');
-Route::get('statistiques/project-plans/count', [StatistiqueController::class, 'projectPlanCount'])->name('statistiques.project-plans.count');
-
 // App Configurations
 Route::get('app-configurations', [AppConfigurationController::class, 'index'])->name('app-configurations.index');
 Route::post('app-configurations/search', [AppConfigurationController::class, 'search'])->name('app-configurations.search');
 
 Route::group(['middleware' => ['auth:sanctum']], function () {
+    //Statistiques
+    Route::get('statistiques/projects/count', [StatistiqueController::class, 'projectCount'])->name('statistiques.projects.count');
+    Route::get('statistiques/project-plans/count', [StatistiqueController::class, 'projectPlanCount'])->name('statistiques.project-plans.count');
 
     //Change Password
     Route::post('change-password', [AuthController::class, 'change_password']);
