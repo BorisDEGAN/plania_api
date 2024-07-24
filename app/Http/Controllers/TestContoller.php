@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Project;
 use Illuminate\Http\Request;
 use Gemini\Laravel\Facades\Gemini;
 use Spatie\LaravelPdf\Facades\Pdf;
@@ -13,6 +14,6 @@ class TestContoller extends Controller
 {
     public function test(Request $request)
     {
-        Browsershot::html('<h1>Hello world!!</h1>')->save(storage_path('pdf/test.pdf'));
+        return (new PromptBuilder(Project::first()))->generateGenreEqualityStrategies();
     }
 }

@@ -36,6 +36,10 @@ class Project extends Model
         'global_objective',
         'objectives',
 
+        'scopes',
+        'acquisition_plan',
+        'infrastructures_plan',
+
         'outcomes',
         'logical_context',
         'intervention_strategies',
@@ -61,6 +65,9 @@ class Project extends Model
         'calendar' => 'array',
         'quality_monitoring' => 'array',
         'intervention_strategies' => 'array',
+        'scopes' => 'array',
+        'acquisition_plan' => 'array',
+        'infrastructures_plan' => 'array',
     ];
 
     protected $appends = [

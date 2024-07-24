@@ -38,6 +38,12 @@ class StoreProjectRequest extends FormRequest
             'budget' => ['nullable', 'string'],
             'budget_currency' => ['nullable', 'string'],
 
+            "scopes" => ['nullable', 'array'],
+            "scopes.*.intervention_zone" => ['nullable', 'string'],
+            "scopes.*.male_beneficiary" => ['nullable', 'integer'],
+            "scopes.*.female_beneficiary" => ['nullable', 'integer'],
+            "scopes.*.total_beneficiary" => ['nullable', 'integer'],
+
             'logical_context' => ['nullable', 'array'],
 
             'logical_context.impact' => ['nullable', 'string'],
@@ -66,6 +72,28 @@ class StoreProjectRequest extends FormRequest
             'partners.managment_levels.*.stakeholders.*.name' => ['nullable', 'array'],
             'partners.managment_levels.*.stakeholders.*.abilities' => ['nullable', 'array'],
             'partners.managment_levels.*.stakeholders.*.abilities.*' => ['nullable', 'string'],
+
+            'acquisition_plan' => ['nullable', 'array'],
+            'acquisition_plan.*' => ['nullable', 'array'],
+            'acquisition_plan.*.period' => ['nullable', 'array'],
+            'acquisition_plan.*.period.from' => ['nullable', 'string'],
+            'acquisition_plan.*.period.to' => ['nullable', 'string'],
+            'acquisition_plan.*.acquisitions' => ['nullable', 'array'],
+            'acquisition_plan.*.acquisitions.*' => ['nullable', 'array'],
+            'acquisition_plan.*.acquisitions.*.type' => ['nullable', 'string'],
+            'acquisition_plan.*.acquisitions.*.quantity' => ['nullable', 'integer'],
+            'acquisition_plan.*.acquisitions.*.unit_price' => ['nullable', 'integer'],
+
+            'infrastructures_plan' => ['nullable', 'array'],
+            'infrastructures_plan.*' => ['nullable', 'array'],
+            'infrastructures_plan.*.locality' => ['nullable', 'string'],
+            'infrastructures_plan.*.type' => ['nullable', 'string'],
+            'infrastructures_plan.*.period' => ['nullable', 'array'],
+            'infrastructures_plan.*.period.from' => ['nullable', 'string'],
+            'infrastructures_plan.*.period.to' => ['nullable', 'string'],
+            'infrastructures_plan.*.description' => ['nullable', 'string'],
+            'infrastructures_plan.*.cost' => ['nullable', 'string'],
+
 
             'quality_monitoring' => ['nullable', 'array'],
             'quality_monitoring.*' => ['nullable', 'string'],
