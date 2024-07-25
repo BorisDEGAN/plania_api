@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Project;
+use App\Services\PromptBuilder\DataProcessor;
 use Illuminate\Http\Request;
 use Gemini\Laravel\Facades\Gemini;
 use Spatie\LaravelPdf\Facades\Pdf;
@@ -14,6 +15,6 @@ class TestContoller extends Controller
 {
     public function test(Request $request)
     {
-        return (new PromptBuilder(Project::first()))->generateGenreEqualityStrategies();
+        return DataProcessor::getProcessedData(Project::first());
     }
 }

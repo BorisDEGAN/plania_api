@@ -1,10 +1,11 @@
-import GeminiService from '#services/gemini'
+import { ProjectData } from '#services/DTO/project'
+import ProjectHandler from '#services/project_handler'
 import type { HttpContext } from '@adonisjs/core/http'
 
 export default class TestsController {
-  async test({ request }: HttpContext) {
-    const gemini = new GeminiService()
+  async test({}: HttpContext) {
+    const projectHandler = new ProjectHandler(ProjectData)
 
-    return await gemini.generate(request.input('prompt'))
+    return projectHandler.generateRisksData()
   }
 }
