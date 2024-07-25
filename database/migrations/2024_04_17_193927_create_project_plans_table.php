@@ -38,8 +38,13 @@ return new class extends Migration
 
             $table->text('acquisition_plan')->nullable();
             $table->text('infrastructures_plan')->nullable();
-
             $table->text('scopes')->nullable();
+
+            $table->text('genre_equality')->nullable();
+            $table->text('risks')->nullable();
+            $table->text('environment')->nullable();
+            $table->text('partners_reinforcement')->nullable();
+            $table->text('outter_strategies')->nullable();
 
             $table->foreignId('project_id')->nullable()->constrained();
 

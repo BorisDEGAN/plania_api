@@ -7,9 +7,10 @@ export default class ProjectsController {
 
     return {
       genre_equality: JSON.parse(await projectHandler.generateGenreEqualityData()),
-      risks: JSON.parse(await projectHandler.generateRisksData()),
-      environment: JSON.parse(await projectHandler.generateEnvironmentData()),
-      partners_reinforcement: JSON.parse(await projectHandler.generatePartnersReinforcementData()),
+      // risks: JSON.parse(await projectHandler.generateRisksData()),
+      // environment: JSON.parse(await projectHandler.generateEnvironmentData()),
+      // partners_reinforcement: JSON.parse(await projectHandler.generatePartnersReinforcementData()),
+      // outter_strategies: JSON.parse(await projectHandler.generateOutterStrategiesData()),
       // budget: JSON.parse(await projectHandler.refactorBudget()),
       // calendar: await projectHandler.refactorCalendar(),
     }

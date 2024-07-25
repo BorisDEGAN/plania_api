@@ -40,6 +40,12 @@ class ProjectPlan extends Model
         'acquisition_plan',
         'infrastructures_plan',
 
+        'genre_equality',
+        'risks',
+        'environment',
+        'partners_reinforcement',
+        'outter_strategies',
+
         'outcomes',
         'logical_context',
         'intervention_strategies',
@@ -72,6 +78,13 @@ class ProjectPlan extends Model
         'scopes' => 'array',
         'acquisition_plan' => 'array',
         'infrastructures_plan' => 'array',
+        'genre_equality' => 'array',
+        'risks' => 'array',
+        'environment' => 'array',
+        'partners_reinforcement' => 'array',
+        'outter_strategies' => 'array',
+
+
     ];
 
     protected $appends = [

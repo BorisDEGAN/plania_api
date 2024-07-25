@@ -2,16 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Project;
 use App\Models\ProjectPlan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
+use App\Services\PromptBuilder\DataProcessor;
 use Symfony\Component\HttpFoundation\Response;
 use App\Http\Requests\ProjectPlan\StoreProjectPlanRequest;
 use App\Http\Requests\ProjectPlan\SearchProjectPlanRequest;
 use App\Http\Requests\ProjectPlan\UpdateProjectPlanRequest;
 use App\Http\Resources\ProjectpPlan\ProjectPlanListResource;
 use App\Http\Resources\ProjectpPlan\ProjectPlanShowResource;
-use App\Models\Project;
 
 class ProjectPlanController extends Controller
 {
@@ -65,6 +66,9 @@ class ProjectPlanController extends Controller
             ...$request->all()
         ]);
 
+        $processed_data = DataProcessor::getProcessedData($project, $request->new_budget, $request->new_duration);
+        // dd($processed_data);
+        $project_plan->update($processed_data);
         $project_plan->setStatus($request->status ?? ProjectPlan::PENDING_STATE);
 
         return (new ProjectPlanShowResource($project_plan))
