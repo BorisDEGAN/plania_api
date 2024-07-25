@@ -37,6 +37,11 @@ return new class extends Migration
             $table->double('budget')->nullable();
             $table->string('budget_currency')->nullable();
 
+            $table->text('acquisition_plan')->nullable();
+            $table->text('infrastructures_plan')->nullable();
+
+            $table->text('scopes')->nullable();
+
             // $table->foreignId('project_id')->nullable()->constrained();
             $table->timestamps();
             $table->softDeletes();

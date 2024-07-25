@@ -8,17 +8,15 @@ use Illuminate\Support\Facades\Http;
 
 class  PromptBuilder
 {
-    public Project $project;
-
     public int $duration;
 
     public float $budget;
 
     public array $final_data;
 
-    public function __construct()
+    public function __construct(public Project $project)
     {
-        $this->project = json_decode(file_get_contents(database_path('data.json')), true);
+        // $this->project = json_decode(file_get_contents(database_path('data.json')), true);
 
         $this->final_data = [
             'title' => $this->project->title,
@@ -50,6 +48,17 @@ class  PromptBuilder
         // return str_replace('"', '', $result->text());
 
         // return json_decode($result->text());
+    }
+
+    public function generateGenreEqualityStrategies()
+    {
+        $equality_strategy_structure = file_get_contents(base_path('app/Services/PromptBuilder/DTO/equality_strategy.json'));
+        $intro = "Tu es un expert en gestion de projet";
+        $outro = "Ne renvoies que les donnees json";
+
+        $result = Gemini::geminiPro()->generateContent("Considérant un projet avec ce objectif, \n".json_encode($this->project->global_objective).'\n en suivant la structure suivante:'.json_encode($equality_strategy_structure).'\n génère des stratégies d\'équité du genre; fait des paragraphes exhaustif. soit exhaustif et ne renvois exclusivement que le json');
+
+        return $result->text();
     }
 
     public function generateBudgetPlan()
