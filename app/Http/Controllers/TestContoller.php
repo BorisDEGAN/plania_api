@@ -15,6 +15,6 @@ class TestContoller extends Controller
 {
     public function test(Request $request)
     {
-        return DataProcessor::getProcessedData(Project::first());
+        return DataProcessor::getProcessedData(Project::first(), 10000000, 36);
     }
 }
