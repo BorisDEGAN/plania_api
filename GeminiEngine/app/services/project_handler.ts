@@ -1,6 +1,8 @@
 import {
+  ContextStructure,
   environmentStructure,
   genreEquityStructure,
+  JustificationStructure,
   partnersReinforcementStructure,
   risksStructure,
 } from './DTO/generated_sections.js'
@@ -117,7 +119,8 @@ export default class ProjectHandler {
     const prompt =
       'Reformule le résumé executif du projet : ' +
       this.projectData.overview +
-      '. Ne renvoie que le texte. Fais des paragraphes concises et claires'
+      'Tu utiliseras la structure suivante ' +
+      JSON.stringify(JustificationStructure)
     const result = await this.chat.sendMessage(prompt)
     const response = await result.response
     return response.text()
@@ -127,7 +130,8 @@ export default class ProjectHandler {
     const prompt =
       'Reformule le contexte du projet : ' +
       this.projectData.context +
-      '. Ne renvoie que le texte. Fais des paragraphes concises et claires'
+      'Tu utiliseras la structure suivante ' +
+      JSON.stringify(ContextStructure)
     const result = await this.chat.sendMessage(prompt)
     const response = await result.response
     return response.text()

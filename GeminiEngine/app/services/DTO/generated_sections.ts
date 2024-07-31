@@ -24,3 +24,11 @@ export const environmentStructure = {
 export const partnersReinforcementStructure = {
   strategies: ['Strategie 1', 'Strategie 2', 'Strategie 3'],
 }
+
+export const ContextStructure = {
+  context: 'Lorem impsum',
+}
+
+export const JustificationStructure = {
+  justification: 'Lorem impsum',
+}
