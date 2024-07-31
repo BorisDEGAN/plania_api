@@ -114,14 +114,20 @@ export default class ProjectHandler {
   }
 
   async refactorOverview() {
-    const prompt = 'Reformule le résumé executif du projet : ' + this.projectData.overview
+    const prompt =
+      'Reformule le résumé executif du projet : ' +
+      this.projectData.overview +
+      '. Ne renvoie que le contexte. Fais des paragraphes concises et claires'
     const result = await this.chat.sendMessage(prompt)
     const response = await result.response
     return response.text()
   }
 
   async refactorContext() {
-    const prompt = 'Reformule le contexte du projet : ' + this.projectData.context
+    const prompt =
+      'Reformule le contexte du projet : ' +
+      this.projectData.context +
+      '. Ne renvoie que le contexte. Fais des paragraphes concises et claires'
     const result = await this.chat.sendMessage(prompt)
     const response = await result.response
     return response.text()
