@@ -117,7 +117,7 @@ export default class ProjectHandler {
     const prompt =
       'Reformule le résumé executif du projet : ' +
       this.projectData.overview +
-      '. Ne renvoie que le contexte. Fais des paragraphes concises et claires'
+      '. Ne renvoie que le résumé. Fais des paragraphes concises et claires'
     const result = await this.chat.sendMessage(prompt)
     const response = await result.response
     return response.text()
