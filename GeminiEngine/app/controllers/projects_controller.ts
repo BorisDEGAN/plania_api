@@ -6,6 +6,8 @@ export default class ProjectsController {
     const projectHandler = new ProjectHandler(request.input('project'))
 
     return {
+      overview: await projectHandler.refactorOverview(),
+      context: await projectHandler.refactorContext(),
       genre_equality: JSON.parse(await projectHandler.generateGenreEqualityData()),
       risks: JSON.parse(await projectHandler.generateRisksData()),
       environment: JSON.parse(await projectHandler.generateEnvironmentData()),
@@ -13,8 +15,6 @@ export default class ProjectsController {
       outter_strategies: JSON.parse(await projectHandler.generateOutterStrategiesData()),
       // budget_plan: JSON.parse(await projectHandler.refactorBudget()),
       // calendar: await projectHandler.refactorCalendar(),
-      overview: await projectHandler.refactorOverview(),
-      context: await projectHandler.refactorContext(),
     }
   }
 }
