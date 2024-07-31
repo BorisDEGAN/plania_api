@@ -6,7 +6,7 @@ services:
       context: '.'
       args:
         uid: 1000
-    container_name: plan-api-dev-app
+    container_name: plania-api
     ports:
       - 8068:80
     environment:
