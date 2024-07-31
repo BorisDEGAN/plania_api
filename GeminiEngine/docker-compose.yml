@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  wazemi-app:
+  gemini-engine:
     container_name: gemini-engine
     build:
       context: .

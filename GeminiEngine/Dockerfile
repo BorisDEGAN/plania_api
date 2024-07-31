@@ -2,7 +2,7 @@
 FROM node:21-alpine
 
 # Set the working directory in the container
-WORKDIR /var/www/plania
+WORKDIR /var/www/gemini-engine
 
 # Copy the rest of the application code to the working directory
 COPY . .
