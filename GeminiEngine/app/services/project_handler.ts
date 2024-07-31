@@ -123,7 +123,7 @@ export default class ProjectHandler {
       JSON.stringify(JustificationStructure)
     const result = await this.chat.sendMessage(prompt)
     const response = await result.response
-    return response.text()
+    return JSON.parse(response.text()).justification
   }
 
   async refactorContext() {
@@ -134,6 +134,6 @@ export default class ProjectHandler {
       JSON.stringify(ContextStructure)
     const result = await this.chat.sendMessage(prompt)
     const response = await result.response
-    return response.text()
+    return JSON.parse(response.text()).context
   }
 }
