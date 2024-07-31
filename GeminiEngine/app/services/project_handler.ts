@@ -112,4 +112,18 @@ export default class ProjectHandler {
       return this.projectData.calendar
     }
   }
+
+  async refactorOverview() {
+    const prompt = 'Reformule le résumé executif du projet : ' + this.projectData.overview
+    const result = await this.chat.sendMessage(prompt)
+    const response = await result.response
+    return response.text()
+  }
+
+  async refactorContext() {
+    const prompt = 'Reformule le contexte du projet : ' + this.projectData.context
+    const result = await this.chat.sendMessage(prompt)
+    const response = await result.response
+    return response.text()
+  }
 }
