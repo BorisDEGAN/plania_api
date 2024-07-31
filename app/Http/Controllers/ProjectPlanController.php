@@ -68,7 +68,6 @@ class ProjectPlanController extends Controller
 
         $processed_data = DataProcessor::getProcessedData($project, $request->new_budget, $request->new_duration);
 
-        dd($processed_data);
         $project_plan->update($processed_data);
         $project_plan->setStatus($request->status ?? ProjectPlan::PENDING_STATE);
 
