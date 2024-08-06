@@ -69,7 +69,7 @@ class StoreProjectRequest extends FormRequest
             'partners.managment_levels.*.level' => ['nullable', 'string'],
             'partners.managment_levels.*.stakeholders' => ['nullable', 'array'],
             'partners.managment_levels.*.stakeholders.*' => ['nullable', 'array'],
-            'partners.managment_levels.*.stakeholders.*.name' => ['nullable', 'array'],
+            'partners.managment_levels.*.stakeholders.*.name' => ['nullable', 'string'],
             'partners.managment_levels.*.stakeholders.*.abilities' => ['nullable', 'array'],
             'partners.managment_levels.*.stakeholders.*.abilities.*' => ['nullable', 'string'],
 
