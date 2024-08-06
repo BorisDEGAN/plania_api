@@ -89,7 +89,7 @@ class ProjectController extends Controller
 
     public function destroy(Project $project)
     {
-        abort_if(Gate::denies('post_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        abort_if(Gate::denies('project_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         $project->delete();
 
