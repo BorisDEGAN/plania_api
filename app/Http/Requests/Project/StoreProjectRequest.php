@@ -92,7 +92,7 @@ class StoreProjectRequest extends FormRequest
             'infrastructures_plan.*.period.from' => ['nullable', 'string'],
             'infrastructures_plan.*.period.to' => ['nullable', 'string'],
             'infrastructures_plan.*.description' => ['nullable', 'string'],
-            'infrastructures_plan.*.cost' => ['nullable', 'string'],
+            'infrastructures_plan.*.cost' => ['nullable', 'integer'],
 
 
             'quality_monitoring' => ['nullable', 'array'],
