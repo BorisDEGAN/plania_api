@@ -31,7 +31,11 @@ class ProjectPlanController extends Controller
         $status = $request->status;
         $per_page = $request->per_page ?? 10;
 
-        $project_plans = ProjectPlan::with(['project'])->orderByDesc('created_at');
+        $project_plans = ProjectPlan::with(['project'])->whereHas('project', function($projects)
+        {
+            $projects->where('user_id', auth()->user()->id);
+
+        })->orderByDesc('created_at');
 
         if($title)
         {

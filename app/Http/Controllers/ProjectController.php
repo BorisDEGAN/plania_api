@@ -26,7 +26,7 @@ class ProjectController extends Controller
     {
         $title = $request->title;
         $description = $request->description;
-        $user_id = $request->user_id;
+        $user_id = $request->user_id ?? auth()->user()->id;
         $status = $request->status;
         $per_page = $request->per_page ?? 10;
 
@@ -58,7 +58,10 @@ class ProjectController extends Controller
 
     public function store(StoreProjectRequest $request)
     {
-        $project = Project::create($request->all());
+        $project = Project::create([
+            'user_id' => auth()->user()->id,
+            ...$request->all(),
+        ]);
 
         $project->setStatus($request->status ?? Project::PENDING_STATE);
 
