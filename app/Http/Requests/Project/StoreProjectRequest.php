@@ -35,7 +35,7 @@ class StoreProjectRequest extends FormRequest
             'objectives.*' => ['nullable', 'string'],
 
             'duration' => ['nullable', 'integer'],
-            'budget' => ['nullable', 'string'],
+            'budget' => ['nullable'],
             'budget_currency' => ['nullable', 'string'],
 
             "scopes" => ['nullable', 'array'],
