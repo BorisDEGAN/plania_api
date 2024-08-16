@@ -25,7 +25,7 @@ class StatistiqueController extends Controller
         $counts = [];
         foreach(ProjectPlan::STATES as $state)
         {
-            $counts[$state] = ProjectPlan::where('user_id', auth()->id())->currentStatus($state)->count();
+            $counts[$state] = ProjectPlan::whereHas('project', function($project) { $project->where('user_id', auth()->id()); })->currentStatus($state)->count();
         }
         return [
             "data"=> $counts
