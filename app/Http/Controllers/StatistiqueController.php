@@ -13,7 +13,7 @@ class StatistiqueController extends Controller
         $counts = [];
         foreach(Project::STATES as $state)
         {
-            $counts[$state] = Project::currentStatus($state)->count();
+            $counts[$state] = Project::where('user_id', auth()->id())->currentStatus($state)->count();
         }
         return [
             "data"=> $counts
@@ -25,7 +25,7 @@ class StatistiqueController extends Controller
         $counts = [];
         foreach(ProjectPlan::STATES as $state)
         {
-            $counts[$state] = ProjectPlan::currentStatus($state)->count();
+            $counts[$state] = ProjectPlan::where('user_id', auth()->id())->currentStatus($state)->count();
         }
         return [
             "data"=> $counts
