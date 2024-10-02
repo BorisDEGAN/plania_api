@@ -58,6 +58,11 @@ class User extends Authenticatable
       return $this->belongsToMany(Role::class);
     }
 
+    public function clearPasswordResetTokens()
+    {
+        PasswordResetToken::where('email', $this->email)->delete();
+    }
+
     protected function serializeDate(DateTimeInterface $date)
     {
       return $date->format(config('panel.datetime_format'));
