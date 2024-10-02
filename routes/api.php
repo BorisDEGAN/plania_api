@@ -11,6 +11,7 @@ use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\ProjectPlanController;
 use App\Http\Controllers\StatistiqueController;
 use App\Http\Controllers\AppConfigurationController;
+use App\Http\Controllers\Auth\PasswordResetController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,9 @@ Route::post('register', [AuthController::class, 'register'])->name('register');
 Route::post('login', [AuthController::class, 'login'])->name('login');
 Route::delete('logout', [AuthController::class, 'logout'])->name('logout');
 Route::post('test', [TestContoller::class, 'test'])->name('test');
+
+Route::post('forgot-password', [PasswordResetController::class, 'forgot'])->name('password.forgot');
+Route::post('reset-password', [PasswordResetController::class, 'reset'])->name('password.reset');
 
 // App Configurations
 Route::get('app-configurations', [AppConfigurationController::class, 'index'])->name('app-configurations.index');
