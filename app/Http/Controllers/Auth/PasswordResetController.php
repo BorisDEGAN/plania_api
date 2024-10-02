@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Auth;
 
 use App\Models\User;
 use Illuminate\Support\Str;
-use App\Http\Requests\Auth\ForgotPasswordRequest;
-use App\Http\Requests\Auth\ResetPasswordRequest;
 use App\Models\PasswordResetToken;
+use App\Http\Requests\Auth\ResetPasswordRequest;
+use App\Http\Requests\Auth\ForgotPasswordRequest;
 use App\Notifications\PasswordResetTokenNotification;
 
 class PasswordResetController
@@ -16,6 +16,14 @@ class PasswordResetController
     {
         $token = Str::random(16);
         $user = User::where('email', $request->email)->first();
+
+        $user->clearPasswordResetTokens();
+
+        PasswordResetToken::create([
+            'email' => $user->email,
+            'token' => $token
+        ]);
+
         $user->notify(new PasswordResetTokenNotification($token));
 
         return response()->json(['message' => "Password reset token sent successfully to $user->email"], 200);
