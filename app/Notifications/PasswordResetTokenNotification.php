@@ -38,7 +38,7 @@ class PasswordResetTokenNotification extends Notification
                     ->subject('Demande de réinitialisation de mot de passe')
                     ->line("Hello, {$notifiable->fullname} !,")
                     ->line('Votre demande de réinitialisation de mot de passe a été traitée. Veuillez cliquer sur le lien ci-dessous pour définir un nouveau mot de passe.')
-                    ->action('Réinitialiser mon mot de passe', env('FRONTEND_URL'). '/auth/reset-password' .'?token='.$this->token.'&email='.$notifiable->email)
+                    ->action('Réinitialiser mon mot de passe', env('FRONTEND_URL'). '/reset-password' .'?token='.$this->token.'&email='.$notifiable->email)
                     ->line('Si vous n\'avez pas fait cette demande de réinitialisation de mot de passe, veuillez ignorer ce message.')
                     ->line('L\'équipe PLAN\'IA.');
     }
