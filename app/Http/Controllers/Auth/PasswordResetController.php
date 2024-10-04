@@ -37,19 +37,19 @@ class PasswordResetController
 
         if(!$token)
         {
-            return response()->json("Pas de réinitialisation de compte en cours", 422);
+            return response()->json(["message" => "Pas de réinitialisation de compte en cours"], 422);
         }
 
         if($token->isExpired())
         {
             $token->delete();
-            return response()->json("Token expire", 422);
+            return response()->json(["message" => "Token expiré"], 422);
         }
 
         if(!$token->isValid($request->token))
         {
             $token->delete();
-            return response()->json("Token Incorrect", 422);
+            return response()->json(["message" => "Token Incorrect"], 422);
         }
 
         $user->update(['password' => $request->password]);
