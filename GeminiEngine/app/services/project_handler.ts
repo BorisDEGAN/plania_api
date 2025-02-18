@@ -136,4 +136,15 @@ export default class ProjectHandler {
     const response = await result.response
     return JSON.parse(response.text()).context
   }
+
+  async refactorJustification() {
+    const prompt =
+      'Reformule la justification du projet : ' +
+      this.projectData.context +
+      'Tu utiliseras la structure suivante ' +
+      JSON.stringify(JustificationStructure)
+    const result = await this.chat.sendMessage(prompt)
+    const response = await result.response
+    return JSON.parse(response.text()).context
+  }
 }

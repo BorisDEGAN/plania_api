@@ -8,6 +8,7 @@ export default class ProjectsController {
     return {
       overview: await projectHandler.refactorOverview(),
       context: await projectHandler.refactorContext(),
+      justification: await projectHandler.refactorJustification(),
       genre_equality: JSON.parse(await projectHandler.generateGenreEqualityData()),
       risks: JSON.parse(await projectHandler.generateRisksData()),
       environment: JSON.parse(await projectHandler.generateEnvironmentData()),
