@@ -150,7 +150,7 @@ export default class ProjectHandler {
 
   async generateGestionStrategy() {
     const prompt =
-      'En prenant en compte les différents partenaires et parties prenantes, etablie une strategie de gestion globale du projet. Tu feras des paragraphes concis et clairs'
+      "En prenant en compte les différents partenaires et parties prenantes, etablie une strategie de gestion globale du projet. Tu feras des paragraphes concis et clairs. Ne renvoie qu'un seule bloc de texte"
     const result = await this.chat.sendMessage(prompt)
     const response = await result.response
     return response.text()
