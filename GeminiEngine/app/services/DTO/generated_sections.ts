@@ -32,3 +32,7 @@ export const ContextStructure = {
 export const JustificationStructure = {
   justification: 'Lorem impsum',
 }
+
+export const GestionStrategyStructure = {
+  strategy: 'Lorem impsum',
+}
