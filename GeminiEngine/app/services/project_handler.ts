@@ -1,4 +1,5 @@
 import {
+  communicationPlanStructure,
   ContextStructure,
   environmentStructure,
   genreEquityStructure,
@@ -135,7 +136,7 @@ export default class ProjectHandler {
       JSON.stringify(ContextStructure)
     const result = await this.chat.sendMessage(prompt)
     const response = await result.response
-    return JSON.parse(response.text()).context
+    return JSON.parse(response.text())?.context
   }
 
   async refactorJustification() {
@@ -146,7 +147,7 @@ export default class ProjectHandler {
       JSON.stringify(JustificationStructure)
     const result = await this.chat.sendMessage(prompt)
     const response = await result.response
-    return JSON.parse(response.text()).context
+    return JSON.parse(response.text())?.justification
   }
 
   async generateGestionStrategy() {
@@ -156,5 +157,16 @@ export default class ProjectHandler {
     const result = await this.chat.sendMessage(prompt)
     const response = await result.response
     return JSON.parse(response.text())?.strategy
+  }
+  async generateCommunicationPlan() {
+    const prompt =
+      'En prenant en compte les données des parties prenantes du projet: ' +
+      this.projectData.partners +
+      ", génère une stratégie de communication entre ces acteurs du projet. Tu noteras qu'il s'agit essantiellement d'un planning de reunions. Tu utiliseras la structure suivante:  " +
+      JSON.stringify(communicationPlanStructure)
+
+    const result = await this.chat.sendMessage(prompt)
+    const response = await result.response
+    return response.text()
   }
 }

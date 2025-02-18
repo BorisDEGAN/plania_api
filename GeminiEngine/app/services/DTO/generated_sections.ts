@@ -36,3 +36,20 @@ export const JustificationStructure = {
 export const GestionStrategyStructure = {
   strategy: 'Lorem impsum',
 }
+
+export const communicationPlanStructure = [
+  {
+    activity: 'Une réunion',
+    purpose: "Pour évaluer l'avancement",
+    attendees: 'Partner 1, Partner 2',
+    frequency: 'Toute les semaines',
+    output: 'Un rapport',
+  },
+  {
+    activity: 'Une autre réunion',
+    purpose: 'Pour évaluer autre chose',
+    attendees: 'Partner 2, Partner 3',
+    frequency: 'Tout les mois',
+    output: 'Un rapport',
+  },
+]
