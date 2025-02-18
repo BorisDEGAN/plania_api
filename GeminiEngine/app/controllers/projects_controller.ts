@@ -14,7 +14,7 @@ export default class ProjectsController {
       environment: JSON.parse(await projectHandler.generateEnvironmentData()),
       partners_reinforcement: JSON.parse(await projectHandler.generatePartnersReinforcementData()),
       outter_strategies: JSON.parse(await projectHandler.generateOutterStrategiesData()),
-      gestion_strategy: await projectHandler.generateGestionStrategy(),
+      gestion_strategy: JSON.parse(await projectHandler.generateGestionStrategy()),
       // budget_plan: JSON.parse(await projectHandler.refactorBudget()),
       // calendar: await projectHandler.refactorCalendar(),
     }
