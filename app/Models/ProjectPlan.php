@@ -84,6 +84,7 @@ class ProjectPlan extends Model
         'environment' => 'array',
         'partners_reinforcement' => 'array',
         'outter_strategies' => 'array',
+        'gestion_strategy' => 'array',
     ];
 
     protected $appends = [
