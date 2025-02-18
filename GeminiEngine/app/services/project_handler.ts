@@ -147,4 +147,12 @@ export default class ProjectHandler {
     const response = await result.response
     return JSON.parse(response.text()).context
   }
+
+  async generateGestionStrategy() {
+    const prompt =
+      'En prenant en compte les différents partenaires et parties prenantes, etablie une strategie de gestion globale du projet. Tu feras des paragraphes concis et clairs'
+    const result = await this.chat.sendMessage(prompt)
+    const response = await result.response
+    return response.text()
+  }
 }

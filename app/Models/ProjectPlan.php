@@ -45,6 +45,7 @@ class ProjectPlan extends Model
         'environment',
         'partners_reinforcement',
         'outter_strategies',
+        'gestion_strategy',
 
         'outcomes',
         'logical_context',
