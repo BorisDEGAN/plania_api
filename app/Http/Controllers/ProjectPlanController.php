@@ -67,7 +67,9 @@ class ProjectPlanController extends Controller
 
         $project_plan = ProjectPlan::create([
             ...collect($project->toArray())->forget('user_id'),
-            ...$request->all()
+            ...$request->all(),
+            'new_budget' => $request->new_budget,
+            'new_duration' => $request->new_duration
         ]);
 
         $processed_data = DataProcessor::getProcessedData($project, $request->new_budget, $request->new_duration);

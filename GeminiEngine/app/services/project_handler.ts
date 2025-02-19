@@ -88,35 +88,29 @@ export default class ProjectHandler {
   }
 
   async refactorBudget() {
-    if (this.projectData.new_budget) {
-      const prompt =
-        'Met à jour le budget du projet en prenant en compte le nouveau budget : ' +
-        this.projectData.new_budget +
-        " et les couts que pourraient engendrer la mise en place des stratégies générées. Tu garderas la meme structure pour le nouveau budget que l'ancien : " +
-        JSON.stringify(this.projectData.budget) +
-        'Tus suivra la structure du budget suivante :' +
-        this.projectData.budget_plan
-      const result = await this.chat.sendMessage(prompt)
-      const response = await result.response
-      return response.text()
-    } else {
-      return this.projectData.budget
-    }
+    const newBudget = this.projectData?.new_budget ?? 1042600000
+    const prompt =
+      'Met à jour le budget du projet en prenant en compte le nouveau budget : ' +
+      newBudget +
+      " et les couts que pourraient engendrer la mise en place des stratégies générées. Tu garderas la meme structure pour le nouveau budget que l'ancien : " +
+      JSON.stringify(this.projectData.budget) +
+      'Tu suivra la structure du budget suivante :' +
+      this.projectData.budget_plan
+    const result = await this.chat.sendMessage(prompt)
+    const response = await result.response
+    return response.text()
   }
 
   async refactorCalendar() {
-    if (this.projectData.new_duration) {
-      const prompt =
-        'Met à jour le calendrier des activités du projet en prenant en compte le nouveau temps alloué : ' +
-        this.projectData.new_duration +
-        " et la mise en place des stratégies générées. Tu garderas la meme structure pour le nouveau calendrier que l'ancien : " +
-        JSON.stringify(this.projectData.calendar)
-      const result = await this.chat.sendMessage(prompt)
-      const response = await result.response
-      return response.text()
-    } else {
-      return this.projectData.calendar
-    }
+    const newDuration = this.projectData?.new_duration ?? 300
+    const prompt =
+      'Met à jour le calendrier des activités du projet en prenant en compte le nouveau temps alloué : ' +
+      newDuration +
+      " et la mise en place des stratégies générées. Tu garderas la meme structure pour le nouveau calendrier que l'ancien : " +
+      JSON.stringify(this.projectData.calendar)
+    const result = await this.chat.sendMessage(prompt)
+    const response = await result.response
+    return response.text()
   }
 
   async refactorOverview() {
