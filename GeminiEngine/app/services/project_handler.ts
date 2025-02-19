@@ -92,13 +92,13 @@ export default class ProjectHandler {
     const prompt =
       'Met à jour le budget du projet en prenant en compte le nouveau budget : ' +
       newBudget +
-      " et les couts que pourraient engendrer la mise en place des stratégies générées. Tu garderas la meme structure pour le nouveau budget que l'ancien : " +
+      " et les couts que pourraient engendrer la mise en place des stratégies générées. Enleve les dépenses inutiles et rajoutes en si besoin en restant dans le budget. Tu garderas la meme structure pour le nouveau budget que l'ancien : " +
       JSON.stringify(this.projectData.budget) +
       'Tu suivra la structure du budget suivante :' +
       this.projectData.budget_plan
     const result = await this.chat.sendMessage(prompt)
     const response = await result.response
-    return response.text()
+    return JSON.parse(response.text())?.budget_plan
   }
 
   async refactorCalendar() {
@@ -106,11 +106,11 @@ export default class ProjectHandler {
     const prompt =
       'Met à jour le calendrier des activités du projet en prenant en compte le nouveau temps alloué : ' +
       newDuration +
-      " et la mise en place des stratégies générées. Tu garderas la meme structure pour le nouveau calendrier que l'ancien : " +
+      " et la mise en place des stratégies générées. Reformule sertaines activités. Tu garderas la meme structure pour le nouveau calendrier que l'ancien : " +
       JSON.stringify(this.projectData.calendar)
     const result = await this.chat.sendMessage(prompt)
     const response = await result.response
-    return response.text()
+    return JSON.parse(response.text())?.calendar
   }
 
   async refactorOverview() {
