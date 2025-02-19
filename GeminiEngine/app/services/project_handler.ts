@@ -93,7 +93,9 @@ export default class ProjectHandler {
         'Met à jour le budget du projet en prenant en compte le nouveau budget : ' +
         this.projectData.new_budget +
         " et les couts que pourraient engendrer la mise en place des stratégies générées. Tu garderas la meme structure pour le nouveau budget que l'ancien : " +
-        JSON.stringify(this.projectData.budget)
+        JSON.stringify(this.projectData.budget) +
+        'Tus suivra la structure du budget suivante :' +
+        this.projectData.budget_plan
       const result = await this.chat.sendMessage(prompt)
       const response = await result.response
       return response.text()
